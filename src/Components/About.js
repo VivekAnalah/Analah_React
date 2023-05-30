@@ -7,7 +7,7 @@ function About() {
       
       <div className="flex space-y-5 flex-col justify-center pt-5">
         <h2 className="font-semibold text-2xl lg:text-3xl text-center m-auto">
-          <span className="title-border-bottom">Abou</span>t Us Chamge this
+          <span className="title-border-bottom">Abou</span>t Us Chamge =this this this 
         </h2>
         <h5 className="font-normal text-base text-justify lg:text-xl xl:text-[18px] text-[#595959] my-1 pt-[30px]">
         Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area. Our primary objective is to provide you with a broad range of insurance products from the most trusted insurers, ensuring that you receive the best possible coverage for your specific requirements. We work tirelessly to ensure that our clients get the highest level of protection at the most competitive rates.
