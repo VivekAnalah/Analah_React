@@ -15,7 +15,7 @@ function RaiseClaimForm() {
         </div>
         <div className=" mycontainer_form mx-auto">
           <div
-            className="items-center flex flex-col justify-center mb-14 lg:mb-28"
+            className="items-center flex flex-col justify-center mb-14 lg:mb-28 scroll-mt-[100px]"
             id="raiseform"
           >
             <div className="max-w-[600px] mt-6">

@@ -23,7 +23,13 @@ function Footer() {
       window.scrollTo(50,0)
       // document.getElementById(id).scrollIntoView()
     } else if(id==="about"){
-      document.getElementById(id).scrollIntoView()
+      // document.getElementById(id).scrollIntoView()
+      // window.href= "/"
+      // window.scrollTo(2400,2400)
+      document.getElementById(id).scrollIntoView({ block: 'start' });
+
+
+
     }
      else if(document.getElementById(id)){
       console.log(id)
@@ -282,7 +288,7 @@ function Footer() {
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("about")}>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
                     <Link to={"/"}>About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
@@ -405,7 +411,7 @@ function Footer() {
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("about")}>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
                   <Link to={"/"}>About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>

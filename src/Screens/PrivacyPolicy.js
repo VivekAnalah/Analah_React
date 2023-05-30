@@ -1,5 +1,5 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { Link, useLocation } from "react-router-dom";
@@ -7,13 +7,9 @@ import { Cheacked_Context } from "../Context/Cheacked_Context";
 
 
 function Home() {
-  const {cheacked_disclaimer,cheacked_T_C,cheacked_privacy } = useContext(Cheacked_Context);
+  const {cheacked_disclaimer,cheacked_T_C,cheacked_privacy,Set_T_C } = useContext(Cheacked_Context);
   const matches = useMediaQuery("(max-width:500px)");
-  const location = useLocation();
-  useEffect(() =>{
-window.scrollTo(0,0)
-  }, [location])
- 
+
   return (
     <div>
       <Header raiseClaim={true} />

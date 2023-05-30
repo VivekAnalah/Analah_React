@@ -40,7 +40,7 @@ function Insurance({ item, ins }) {
         /> */}
 
       <div className="contents">
-        <h6 className="text-[75%]  pt-2  font-bold  lg:w-10/12 min-h-[39px] insurance-home-text">
+        <h6 className="text-[85%]  pt-2  font-bold  lg:w-10/12 min-h-[39px] insurance-home-text">
         {/* xl:text-sm font-normal  font*/}
           {item.name}
         </h6>

@@ -1,11 +1,11 @@
-import { Grid, useMediaQuery } from "@mui/material";
+import {  useMediaQuery } from "@mui/material";
 import React from "react";
 
 function FoundingTeam() {
-  const matches = useMediaQuery("(max-width:500px)");
+  
   return (
     <div className="mr-[8.5%] ml-[8.5%]" >
-      <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-10 lg:pb-[40px] pt-[10px] lg:pt-[20px] ">
+      <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-15 lg:pb-[80px] pt-[10px] lg:pt-[20px] ">
         <span className="title-border-bottom">Found</span>ing Team
       </h2>
       {/* <div className="py-10 lg:py-20">
@@ -30,7 +30,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             CEO
           </h5>
-          <p className="font-normal text-base lg:text-[18px] xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[16px] xl:text-[18px] text-[#595959] text-justify">
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector. <br />
             <br />
@@ -54,7 +54,7 @@ function FoundingTeam() {
         </div>
       </div>
 
-      <div className="mb-8 lg:mb-16 bg-[#2A44A9] h-[1px] m-auto" />
+      <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] h-[1px] m-auto" />
 {/* -------------------------Co-Founder-------- Hitesh Dhankani--------------------------------------------- */}
       <div className="flex  lg:flex-row items-center gap-[8%] flex-col-reverse" >
         <div className="space-y-5  w-full lg:w-[60%] teamDetails2" >
@@ -64,7 +64,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Co-Founder
           </h5>
-          <p className="font-normal text-base lg:text-[18px] xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[16px] xl:text-[18px] text-[#595959] text-justify">
             Hitesh is reckoned as a reputable, thoughtful & an action oriented
             leader with proven success in Asset Management, Fundraising,
             Distribution, Sales, Marketing, Research and Advisory across
@@ -97,7 +97,7 @@ function FoundingTeam() {
         </div>
       </div>
 
-      <div className="mb-8 lg:mb-16 bg-[#2A44A9] m-auto h-[1px]" />
+      <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] m-auto h-[1px]" />
 {/* -------------------------Senior Vice President-------- Satya Pravas Parida--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%]">
         <div className="w-full  lg:w-[32%] flex justify-center lg:justify-start">
@@ -119,7 +119,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Senior Vice President
           </h5>
-          <p className="font-normal text-base lg:text-[18px] xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[16px] xl:text-[18px] text-[#595959] text-justify">
             Satya brings more than 23 years of experience having worked with
             leading Insurance & Stock Broking verticals. His extensive
             experience ranges across Insurance Distribution, Franchise and IFA
@@ -133,7 +133,7 @@ function FoundingTeam() {
         </div>
       </div>
 
-      <div className="my-0 lg:my-0 bg-[#2A44A9] m-auto h-[1px]" />
+      <div className="mt-[20px] bg-[#2A44A9] h-[1px]" />
     </div>
   );
 }
