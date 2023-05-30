@@ -1,0 +1,19 @@
+.mycontainer_raise {
+  background-color: pink;
+  border: 1px solid red;
+   padding: 0 50px !important;
+  }
+
+  @media (min-width: 1500px) and (max-width: 1600px) {
+    .mycontainer_raise {
+      padding: 0 115px !important;
+    }
+    }
+
+    @media only screen and (max-width: 500px) and (min-width: 50px) {
+       
+     .mycontainer_raise {
+          margin-left: 10%;
+          padding: 0 10px !important;
+        }
+      }
