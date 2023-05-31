@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Link } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollTop';
 
 import CheackedContextProvider from './Context/Cheacked_Context';
 
@@ -14,6 +15,7 @@ root.render(
   
 <CheackedContextProvider>
 <BrowserRouter>
+<ScrollToTop />
   <React.StrictMode>
 
 <App />

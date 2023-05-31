@@ -136,16 +136,18 @@ function Travel() {
         benefits={[]}
         keyTerms={[]}
         quotes = {"Get Free Quotes"}
-        quotes_link = {"https://term.analahinsurance.com/"}
+        quotes_link = {""}
         why={false}
         whyText ={[]} 
         isRequired = {false}
-          whyRequired_head = {"Why is Car Insurance required?"}
+          whyRequired_head = {""}
           whyRequired_Text = {[]}  
           what={true}
           whatText = {whatText}
           whatHeadingText = {"A travel insurance policy provides coverage for potential financial losses during your travel, offering protection throughout your trip and assisting you in dealing with any unexpected financial emergencies that may arise."}
           whatDefinition = {"A travel insurance policy provides coverage for potential financial losses during your travel, offering protection throughout your trip and assisting you in dealing with any unexpected financial emergencies that may arise."}
+          gridTopLeft = {"Coverage Benefit"}
+        gridTopRight = {"Meaning"}
           gridHeader={"What is covered in Travel Insurance?"}
           gridText={gridText}
           />

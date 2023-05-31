@@ -44,7 +44,9 @@ function PolicyDetails({
   gridHeader,
   document_data,
   add_ons_array,
-  extra_data
+  extra_data,
+  gridTopRight,
+  gridTopLeft
 }) {
   const matches = useMediaQuery("(max-width:500px)");
 
@@ -93,127 +95,19 @@ function PolicyDetails({
             </div>
           </div>
           <div className="order-1 sm:order-2 flex flex-col items-center xl:ml-[10%] lg:ml-[5%]">
-            <img
-              src={require(`../Assets/Images/${img}.png`)}
-              alt={head}
-              className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]  "
-            />
-
-            {/* ---------- Form -------------  */}
-            {/* <div className="order-1 lg:order-2 flex flex-col ">
-              <div className="items-center flex justify-center mt-5 lg:mt-0">
-                <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10">
-                  <div className="flex flex-col space-y-6 items-center justify-center mt-[0px]">
-                    <h2 className="text-xl text-[#2A44A9] font-bold text-center">
-                      Get the right {head} plan Today !
-                    </h2>
-
-                    <div>
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Full Name (Name as per PAN card)"
-                      />
-                      <div className="phoneInpt">
-                        <input
-                          type="text"
-                          className="input-text"
-                          placeholder="Mobile No. "
-                        />
-                        <span>Send OTP</span>
-                      </div>
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Enter OTP"
-                      />
-
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Email"
-                      />
-
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Enter PAN Card Number"
-                      />
-                      <div>
-                        {homeInsurance ? (
-                          <>
-                            <p className="pt-3">
-                              Do you own the property or do you rent it?
-                            </p>
-                            <div className="section over-hide z-bigger">
-                              <div className="section over-hide z-bigger">
-                                <div className="container-fluid pt-2">
-                                  <div className="row justify-content-center pb-5">
-                                    <div className="col-12 pb-5">
-                                      <input
-                                        className="checkbox-tools"
-                                        type="radio"
-                                        name="tools"
-                                        id="tool-1"
-                                        checked
-                                      />
-                                      <label
-                                        className="for-checkbox-tools"
-                                        for="tool-1"
-                                      >
-                                        Owner
-                                      </label>
-                                      <input
-                                        className="checkbox-tools"
-                                        type="radio"
-                                        name="tools"
-                                        id="tool-6"
-                                      />
-                                      <label
-                                        className="for-checkbox-tools"
-                                        for="tool-6"
-                                      >
-                                        Tenant
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </>
-                        ) : null}
-                      </div>
-
-                      <div className="checkbox pt-4">
-                        <div className="round">
-                          <input type="checkbox" name="" id="checkBox" />
-                          <label htmlFor="checkBox"></label>
-                        </div>
-                        <Link to="/privacy-policy">
-                          <p className="text-xs	px-5">
-                            {" "}
-                            I hereby agree to the Privacy Policy, Disclaimer and
-                            Terms & Conditions.
-                          </p>
-                        </Link>
-                      </div>
-                      <div className="text-center">
-                        <button
-                          className="justify-center w-full sm:w-[210px] text-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                          style={{
-                            background:
-                              "linear-gradient(180deg, #2A44A9 0%, #3052D3 100%)",
-                            borderRadius: 11,
-                          }}
-                        >
-                          Verify
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            {img === "Travel_ins" ? (
+              <img
+                src={require(`../Assets/Images/${img}.png`)}
+                alt={head}
+                className=" lg:w-[400px] md:w-[350px] sm:w-[350px] w-[80%] xl:ml-[-50%] lg:ml-[-5%] "
+              />
+            ) : (
+              <img
+                src={require(`../Assets/Images/${img}.png`)}
+                alt={head}
+                className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]  "
+              />
+            )}
           </div>
         </div>
       </div>
@@ -237,13 +131,11 @@ function PolicyDetails({
           className="items-center  w-[100%]   absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
           style={{ textAlign: "center" }}
         >
-         
-            <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
-              <span className="text-[#2A44A9] font-light">{Ins_Text_1}</span>{" "}
-              <span className="text-[#2A44A9] font-normal">{Ins_Text_2}</span>{" "}
-              <span className="text-[#2A44A9] font-light">{Ins_Text_3}</span>
-            </h2>
-          
+          <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
+            <span className="text-[#2A44A9] font-light">{Ins_Text_1}</span>{" "}
+            <span className="text-[#2A44A9] font-normal">{Ins_Text_2}</span>{" "}
+            <span className="text-[#2A44A9] font-light">{Ins_Text_3}</span>
+          </h2>
         </div>
 
         <div
@@ -342,35 +234,35 @@ function PolicyDetails({
               ) : (
                 ""
               )}
-               {what ? (
-              <>
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  What is Travel Insurance?
-                </h2>{" "}
-                <p className="text-[#595959] text-base lg:text-lg text-justify">
-                  {whatDefinition}
-                </p>
-                <p className="text-[#595959] font-[600] text-base lg:text-lg text-justify mb-4 mt-4 lg:mb-6">
-                  Types of Travel Insurance in India
-                </p>
-                <ul className="list-disc ml-4 mb-10">
-                  {whatText &&
-                    whatText.map((item, index) => {
-                      return (
-                        <li
-                          className="text-[#595959] text-base lg:text-base text-justify mb-4 lg:mb-6"
-                          key={index}
-                        >
-                          <span className="font-[600]">{item.desc_head}</span>{" "}
-                          {item.desc}
-                        </li>
-                      );
-                    })}
-                </ul>{" "}
-              </>
-            ) : (
-              ""
-            )}
+              {what ? (
+                <>
+                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                    What is Travel Insurance?
+                  </h2>{" "}
+                  <p className="text-[#595959] text-base lg:text-lg text-justify">
+                    {whatDefinition}
+                  </p>
+                  <p className="text-[#595959] font-[600] text-base lg:text-lg text-justify mb-4 mt-4 lg:mb-6">
+                    Types of Travel Insurance in India
+                  </p>
+                  <ul className="list-disc ml-4 mb-10">
+                    {whatText &&
+                      whatText.map((item, index) => {
+                        return (
+                          <li
+                            className="text-[#595959] text-base lg:text-base text-justify mb-4 lg:mb-6"
+                            key={index}
+                          >
+                            <span className="font-[600]">{item.desc_head}</span>{" "}
+                            {item.desc}
+                          </li>
+                        );
+                      })}
+                  </ul>{" "}
+                </>
+              ) : (
+                ""
+              )}
               {no_benefit ? (
                 ""
               ) : (
@@ -393,12 +285,64 @@ function PolicyDetails({
                   </ul>{" "}
                 </>
               )}
+              {twoWheel ? (
+                <>
+                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                    {benefit_head}
+                  </h2>
+                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                    Bike insurance in India offers several benefits to
+                    policyholders. Some of the key advantages include:
+                  </p>
+                  <ul className="list-disc ml-4 mb-10">
+                    {benefits.map((item, index) => {
+                      return (
+                        <li
+                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          key={index}
+                        >
+                          <span className="font-[600]">{item.desc_head}</span>{" "}
+                          {item.desc}
+                        </li>
+                      );
+                    })}
+                  </ul>{" "}
+                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6 font-[600]">
+                    It is important to carefully assess the coverage, terms, and
+                    conditions offered by different insurance providers and
+                    choose a policy that best suits your requirements and
+                    budget.
+                  </p>
+                </>
+              ) : (
+                <></>
+              )}
 
               <div className={matches ? "my-2 h-[10px]" : "my-4 h-[10px]"} />
               {twoWheel ? (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  Benefits of Group Health Insurance to the Employee:
-                </h2>
+                <>
+                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                    How to choose a Two-wheeler Insurance Policy?
+                  </h2>
+                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                    Once you understand the significance of having a bike
+                    insurance policy, the subsequent step is to familiarize
+                    yourself with the types of bike insurance policies
+                    available. In the market, there are two categories of bike
+                    insurance policies. The first is a third-party bike
+                    insurance, which is a fundamental policy providing coverage
+                    for damages caused to a third party due to your bike. On the
+                    other hand, a comprehensive bike insurance plan offers
+                    coverage for both you and the third party involved.
+                  </p>
+                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                    Nevertheless, similar to any other purchase, it is crucial
+                    to conduct thorough research and compare your needs with
+                    affordability before buying a bike insurance policy. Here
+                    are some valuable tips that can assist you in selecting the
+                    best bike insurance plan:
+                  </p>
+                </>
               ) : homeInsurance ? (
                 <></>
               ) : (
@@ -489,127 +433,133 @@ function PolicyDetails({
                   })}
                 </ul>
               )}
-
-             
             </div>
-             
-              {/* What is covered Travel Insurance section */}
 
-          {gridHeader ? (
-            <>
-              <div className="w-[100%]">
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                  {gridHeader}
-                </h2>
+            {/* What is covered Travel Insurance section */}
 
-                <div className="flex gap-[5px] mt-[5px]">
-                  <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
-                    Coverage Benefit
-                  </div>
-                  <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF] font-[600]">
-                    Meaning
-                  </div>
-                </div>
-                {gridText &&
-                  gridText.map((text, index) => (
-                    <div className="flex gap-[5px] mt-[5px]" key={index}>
-                      <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
-                        {text.title}
-                      </div>
-                      <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF]">
-                        {text.desc}
-                      </div>
+            {gridHeader ? (
+              <>
+                <div className="w-[100%]">
+                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                    {gridHeader}
+                  </h2>
+
+                  <div className="flex gap-[5px] mt-[5px]">
+                    <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
+                      {gridTopLeft}
                     </div>
-                  ))}
-              </div>
-            </>
-          ) : (
-            <></>
-          )}
-          {/* Why required section for Car  */}
-          {isRequired ? (
-            <>
-              <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
-                {whyRequired_head}
-              </h2>
-              <ul className="list-disc ml-4 mb-10">
-                {whyRequired_Text && whyRequired_Text.map((item, index) => {
-                  return (
-                    <li
-                      className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
-                      key={index}
-                    >
-                      <span className="font-[600]">{item.require_head}</span>{" "}
-                      {item.require}
-                    </li>
-                  );
-                })}
-              </ul>{" "}
-            </>
-          ) : (
-            ""
-          )}
+                    <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF] font-[600]">
+                      {gridTopRight}
+                    </div>
+                  </div>
+                  {gridText &&
+                    gridText.map((text, index) => (
+                      <div className="flex gap-[5px] mt-[5px]" key={index}>
+                        <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
+                          {text.title}
+                        </div>
+                        <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF]">
+                          {text.desc}
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </>
+            ) : (
+              <></>
+            )}
+            {/* Why required section for Car  */}
+            {isRequired ? (
+              <>
+                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  {whyRequired_head}
+                </h2>
+                <ul className="list-disc ml-4 mb-10">
+                  {whyRequired_Text &&
+                    whyRequired_Text.map((item, index) => {
+                      return (
+                        <li
+                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          key={index}
+                        >
+                          <span className="font-[600]">
+                            {item.require_head}
+                          </span>{" "}
+                          {item.require}
+                        </li>
+                      );
+                    })}
+                </ul>{" "}
+              </>
+            ) : (
+              ""
+            )}
 
-          {/* Add-ons In car  */}
-          {extra_data ? <div>
-            <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
-              Add-ons in a Car Insurance Policy
-            </p>
-            <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
-              In addition to the standard Car Insurance coverage, Insurance
-              companies also offer ‘Add-on Covers’, which are additional covers
-              that protect your car and offer extra coverage. By paying an
-              additional premium, which is added to the Car Insurance quotes to
-              determine the final premium payable for the policy, Add-on Covers
-              can be purchased. Comprehensive Car Insurance packages provide
-              Add-ons. Below are some examples of frequent Add-ons:
-            </p>
-          
-            <ul className="list-disc ml-4 mb-10">
-              {add_ons_array && add_ons_array.map((item, index) => {
-                return (
-                  <li
-                    className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
-                    key={index}
-                  >
-                    <span className="font-[600]">{item.require_head}</span>{" "}
-                    {item.require}
-                  </li>
-                );
-              })}
-            </ul>{" "}
-            <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
-              Documents required to Raise Car Insurance Claim:
-            </p>
-            <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
-              There is no actual paperwork required to raise a claim against
-              your policy. The following documents must instead be uploaded
-              digitally via our digital platform (mobile website/app). Please
-              note that depending on the claim, the list of required documents
-              may change.
-            </p>
-            <ul className="list-disc ml-4 mb-10">
-              {document_data.map((item, index) => {
-                return (
-                  <li
-                    className="text-[#595959] text-base lg:text-lg text-justify  ml-[5%]"
-                    key={index}
-                  >
-                 
-                    {item.require}
-                  </li>
-                );
-              })}
-            </ul>{" "}
-          </div> : <></> }
-          
+            {/* Add-ons In car  */}
+            {extra_data ? (
+              <div>
+                <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
+                  Add-ons in a Car Insurance Policy
+                </p>
+                <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
+                  In addition to the standard Car Insurance coverage, Insurance
+                  companies also offer ‘Add-on Covers’, which are additional
+                  covers that protect your car and offer extra coverage. By
+                  paying an additional premium, which is added to the Car
+                  Insurance quotes to determine the final premium payable for
+                  the policy, Add-on Covers can be purchased. Comprehensive Car
+                  Insurance packages provide Add-ons. Below are some examples of
+                  frequent Add-ons:
+                </p>
+                <ul className="list-disc ml-4 mb-10">
+                  {add_ons_array &&
+                    add_ons_array.map((item, index) => {
+                      return (
+                        <li
+                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          key={index}
+                        >
+                          <span className="font-[600]">
+                            {item.require_head}
+                          </span>{" "}
+                          {item.require}
+                        </li>
+                      );
+                    })}
+                </ul>{" "}
+                <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
+                  Documents required to Raise Car Insurance Claim:
+                </p>
+                <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
+                  There is no actual paperwork required to raise a claim against
+                  your policy. The following documents must instead be uploaded
+                  digitally via our digital platform (mobile website/app).
+                  Please note that depending on the claim, the list of required
+                  documents may change.
+                </p>
+                <ul className="list-disc ml-4 mb-10">
+                  {document_data.map((item, index) => {
+                    return (
+                      <li
+                        className="text-[#595959] text-base lg:text-lg text-justify  ml-[5%]"
+                        key={index}
+                      >
+                        {item.require}
+                      </li>
+                    );
+                  })}
+                </ul>{" "}
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
           <img
-          alt="left triangle"
-          style={{ display: matches ? "none" : "" }}
+            alt="left triangle"
+            style={{ display: matches ? "none" : "" }}
             src={require("../Assets/Images/rightTriangle.png")}
-          className="object-contain aspect-auto sm:w-[100px] w-[70px] absolute  bottom-[0%] right-[0%]  h-auto  sm:block hidden"
-        />
+            className="object-contain aspect-auto sm:w-[100px] w-[70px] absolute  bottom-[0%] right-[0%]  h-auto  sm:block hidden"
+          />
         </div>
       </div>
       <div className="mt-[20px]">
