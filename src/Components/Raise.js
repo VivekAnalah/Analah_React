@@ -1,12 +1,34 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 // --------- CSS Module Added ----------------
 // import Raise_css from "../Styles/Raise.module.css"
 
 function Raise() {
-  const matches = useMediaQuery("(max-width:640px)");
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    
+  
+    background: isHovered ? "#2A44A9" : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+    boxShadow: "5px 10px",
+    color :  "white",
+    borderRadius: 11,
+   
+    
+    
+    
+  };
   return (
     <>
       {/* <div className=" policy-buttons justify-end flex flex-row pr-5">
@@ -38,14 +60,14 @@ function Raise() {
               <div className="text-center my-6 sm:text-left sm:my-0 ">
                 <a href="#raiseform">
                   <button
-                    className="justify-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                    style={{
-                      background:
-                        "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
-                      borderRadius: 11,
-                    }}
+                  style={divStyles}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                
+                    className=" justify-center items-center py-2 text-[#FFFFFF] px-10 text-[18px] hover:scale-110"
+                    id="raise-button"
                   >
-                    Raise Claim
+                    Raise Claim 
                   </button>
                 </a>
               </div>

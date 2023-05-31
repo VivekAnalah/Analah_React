@@ -30,7 +30,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             CEO
           </h5>
-          <p className="font-normal text-base lg:text-[16px] 2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector. <br />
             <br />
@@ -64,7 +64,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Co-Founder
           </h5>
-          <p className="font-normal text-base lg:text-[16px] 2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
             Hitesh is reckoned as a reputable, thoughtful & an action oriented
             leader with proven success in Asset Management, Fundraising,
             Distribution, Sales, Marketing, Research and Advisory across
@@ -119,7 +119,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Senior Vice President
           </h5>
-          <p className="font-normal text-base lg:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base  lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
             Satya brings more than 23 years of experience having worked with
             leading Insurance & Stock Broking verticals. His extensive
             experience ranges across Insurance Distribution, Franchise and IFA
