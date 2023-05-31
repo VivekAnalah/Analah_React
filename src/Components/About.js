@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useContext, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import { Cheacked_Context } from "../Context/Cheacked_Context";
 
 
 function About() {
+  const targetDivRef = useRef(null);
+  const location = useLocation();
+  
+  useEffect(() => {
+    console.log(location)
+    if (location.hash === "#about") {
+      targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
-    <div className="bg-[#FAFFFF] mt-[0px] scroll-mt-[100px]" id="about" >
+    <div className="bg-[#FAFFFF] mt-[0px] scroll-mt-[100px]" id="about" ref={targetDivRef} >
       
       <div className="flex space-y-5 flex-col justify-center pt-5">
         <h2 className="font-semibold text-2xl lg:text-3xl text-center m-auto lg:pb-[30px] pb-[0px]">

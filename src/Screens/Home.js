@@ -1,5 +1,5 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import About from "../Components/About";
 import Values from "../Components/Values";
 import ChooseUs from "../Components/ChooseUs";
@@ -10,6 +10,7 @@ import Insurance from "../Components/Insurance";
 import OurPartner from "../Components/OurPartner";
 import "../App.css";
 import { ImportantDevices } from "@mui/icons-material";
+
 
 const insurance_data = [
   {
@@ -72,6 +73,16 @@ const insurance_data = [
 
 function Home() {
   const matches = useMediaQuery("(max-width:500px)");
+  // const { sectionId } = useParams();
+  // const sectionRef = useRef(null);
+
+  // useEffect(() => {
+  //   console.log(sectionId)
+  //   if (sectionRef.current) {
+  //     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // }, [sectionId]);
+
   return (
     <div className="relative" id="top-scroll">
       <Header />

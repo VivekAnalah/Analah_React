@@ -1,12 +1,14 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useContext, useRef } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Cheacked_Context } from "../Context/Cheacked_Context";
-
+export let sectionRef 
 function Footer() {
   const matches = useMediaQuery("(max-width:900px)");
-  // const navigate = useNavigate();
-  const {Set_Disclaimer,  Set_T_C, Set_Privacy} = useContext(Cheacked_Context)
+  const location = useLocation();
+  console.log(location)
+
+  const {Set_Disclaimer,  Set_T_C, Set_Privacy, Set_About} = useContext(Cheacked_Context)
   const pageScroll = (id)=>{
  
     if(id==="tab2"){
@@ -22,14 +24,18 @@ function Footer() {
       Set_Privacy()
       window.scrollTo(50,0)
       // document.getElementById(id).scrollIntoView()
-    } else if(id==="about"){
+    } else if(id==="about"&& location.hash === "#about" || id==="about"&& location.pathname === "/"){
+
       // document.getElementById(id).scrollIntoView()
       // window.href= "/"
       // window.scrollTo(2400,2400)
-      document.getElementById(id).scrollIntoView({ block: 'start' });
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+          //  Set_About()
 
 
-
+    }
+    else if(id==="home"){
+     
     }
      else if(document.getElementById(id)){
       console.log(id)
@@ -37,15 +43,7 @@ function Footer() {
       // document.getElementById(id).scrollIntoView()
     }
   }
-  // const Disclaimer_Route = (id) =>{
-  //   if(document.getElementById(id)){
-  //     document.getElementById(id).scrollIntoView()
-  //   }
-  //   Set_Disclaimer()
-    
-  //  navigate("/privacy-policy")
-   
-  // }
+ 
   return (
     <div className="">
       {/* <div class="grid grid-cols-3 bg-[#2A44A9] w-[100%] justify-evenly">
@@ -289,7 +287,7 @@ function Footer() {
                     <Link to={"/"}>Home</Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
-                    <Link to={"/"}>About us </Link>
+                    <Link to={"/#about"} >About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
                        <Link to={"/Raiseaclaim"}>Claim</Link>
@@ -412,7 +410,7 @@ function Footer() {
                     <Link to={"/"}>Home</Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
-                  <Link to={"/"}>About us </Link>
+                  <Link to={"/#about"} >About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
                        <Link to={"/Raiseaclaim"}>Claim</Link>

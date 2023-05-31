@@ -1,5 +1,5 @@
 import "./App.css";
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route  } from "react-router-dom";
 import Home from "./Screens/Home";
 import TermLife from "./Screens/Insurances/TermLife";
 import HealthInsurance from "./Screens/Insurances/HealthInsurance";
@@ -18,7 +18,7 @@ import Signup  from "./Components/Signup";
 import InvestmentPlans from "./Screens/Insurances/InvestmentPlans";
 import GuaranteedReturns from "./Screens/Insurances/GuaranteedReturns";
 import Travel from "./Screens/Insurances/TravelInsurance";
-
+import About from "./Components/About";
 
 
 function App() {
@@ -26,7 +26,10 @@ function App() {
     
   
       <Routes>
+    
         <Route path="/" element={<Home />} />
+      
+        
         <Route path="/Term-Life" element={<TermLife />} />
         <Route path="/Health" element={<HealthInsurance />} />
         <Route path="/Family" element={<FamilyHealth />} />
@@ -44,6 +47,7 @@ function App() {
         <Route path="/Investment" element={<InvestmentPlans />} />
         <Route path="/Guaranteed" element={<GuaranteedReturns />} />
         <Route path="/Travel" element={<Travel />} />
+        {/* <Route path="/:sectionId" element={<About />} /> */}
 
 
       </Routes>
