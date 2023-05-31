@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import { Link } from "react-router-dom";
@@ -7,6 +7,26 @@ import { Link } from "react-router-dom";
 
 
 function GuaranteedReturns() {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    background: isHovered
+      ? "white"
+      : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+      boxShadow: isHovered ? "5px 10px" : "",
+    color: isHovered ? "#2A44A9" : "#ffffff",
+    borderRadius: 11,
+  };
 
   return (
     <>
@@ -35,7 +55,7 @@ function GuaranteedReturns() {
               </h3>
               <div className="order-1 lg:order-2 flex flex-col ">
               <div className="items-center flex justify-center mt-5 lg:mt-0">
-                <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10 ">
+                <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10 hover:shadow-blue-800 hover:shadow-md">
                   <div className="flex flex-col space-y-6 items-center justify-center mt-[0px] m-[auto]">
                     <h2 className="text-xl text-[#2A44A9] font-bold text-center">
                       Get the right  plan Today !
@@ -90,11 +110,9 @@ function GuaranteedReturns() {
                       <div className="text-center">
                         <button
                           className="justify-center w-full sm:w-[210px] text-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                          style={{
-                            background:
-                              "linear-gradient(180deg, #2A44A9 0%, #3052D3 100%)",
-                            borderRadius: 11,
-                          }}
+                          style={divStyles}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                         >
                           Verify
                         </button>

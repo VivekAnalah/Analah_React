@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../App.css";
@@ -53,7 +53,25 @@ function PolicyDetails({
   const title = head;
   const myArr = title.split(" ");
 
-  console.log(myArr[0], Ins_Text_1);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    background: isHovered
+      ? "white"
+      : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+    boxShadow: isHovered ? "5px 10px" : "",
+    color: isHovered ? "#2A44A9" : "#ffffff",
+    borderRadius: 11,
+  };
 
   return (
     <div>
@@ -115,11 +133,10 @@ function PolicyDetails({
         <div className="text-center items-center   h-[20px] absolute top-[0%] ">
           <a href={quotes_link} target="blank">
             <button
-              className="justify-center items-center py-2 text-[#FFFFFF] px-10 sm:text-[18px] text-[15px] "
-              style={{
-                background: "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
-                borderRadius: 11,
-              }}
+              className="justify-center items-center py-2 text-[#FFFFFF] px-10 sm:text-[18px] text-[15px]"
+              style={divStyles}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
             >
               {quotes}
             </button>

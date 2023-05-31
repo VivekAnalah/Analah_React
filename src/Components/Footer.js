@@ -203,37 +203,37 @@ function Footer() {
                   <h1 className="font-[600] text-[18px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("insurnce-scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("insurnce-scroll")}>
                     <Link to="/Term-Life">Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("insurnce-scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("insurnce-scroll")}>
                     <Link to="/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Home">Home Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Investment">Investment Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Travel"> Travel Insurance </Link>
                   </h5>
                   <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
@@ -241,21 +241,21 @@ function Footer() {
                     <img
                       src={require("../Assets/Images/twitter.png")}
                       alt="twitter"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                     />
                     </a>
                     <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
                     <img
                       src={require("../Assets/Images/instagram.png")}
                       alt="instagram"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                     />
                     </a>
                     <a href="https://www.facebook.com/analahinsurance" target="_blank">
                     <img
                       src={require("../Assets/Images/facebook-app-symbol.png")}
                       alt="facebook"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                     />
                     </a>
                     
@@ -263,7 +263,7 @@ function Footer() {
                     <img
                       src={require("../Assets/Images/linkedin.png")}
                       alt="linkedin"
-                      className="object-contain w-[15px] h-[15px]"
+                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                     />
 
                     </a>
@@ -283,33 +283,33 @@ function Footer() {
                     Quick Links
                   </h1>
                   
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[teal]" onClick={()=>pageScroll("about")}>
                     <Link to={"/#about"} >About us </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                        <Link to={"/Raiseaclaim"}>Claim</Link>
                     </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/policy-cancel"}>Policy Cancellation</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/become-posp"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("tab1")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("tab1")}>
                     <Link to={"/privacy-policy"} >Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab3")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab3")}>
                     
                     <Link to={"/privacy-policy"} >Terms & Conditions </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab2")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab2")}>
                   <Link to={"/privacy-policy"} > Disclaimer </Link>
                   </h5>
                 </div>
@@ -330,11 +330,11 @@ function Footer() {
                   </h5>
                   <br />
 
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-white">
+                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-white hover:text-[teal]">
                     <a href="tel:+91 99208 78181">+91 99208 78181</a>
                     
                   </h5>
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-justify text-white">
+                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-justify text-white hover:text-[teal]">
                     <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>
                     
                     <br />
@@ -367,71 +367,71 @@ function Footer() {
                   <h1 className="font-[600] text-[28px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Term-Life" >Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Home">Home Insurance</Link>
                      
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Retirement">Retirement Plans</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                    <Link to="/Investment">Investment Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                    <Link to="/Travel"> Travel Insurance </Link>
                   </h5>
 
                 </div>
                 <div className="space-y-5">
                   <h1 className="font-[600] text-[28px] text-white" >Explore</h1>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px]" onClick={()=>pageScroll("about")}>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[teal]" onClick={()=>pageScroll("about")}>
                   <Link to={"/#about"} >About us </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                        <Link to={"/Raiseaclaim"}>Claim</Link>
                     </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/policy-cancel"}>Policy Cancellation</Link>
                     
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/become-posp"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("scroll")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("scroll")}>
                     <Link to={"/careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white" onClick={()=>pageScroll("tab1")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]" onClick={()=>pageScroll("tab1")}>
                     <Link to={"/privacy-policy"} >Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab3")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab3")}>
                     <Link to={"/privacy-policy"} >Terms & Conditions </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white"  onClick={()=>pageScroll("tab2")}>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab2")}>
                    <Link to={"/privacy-policy"} > Disclaimer </Link>
                   </h5>
                 </div>
@@ -456,9 +456,9 @@ function Footer() {
                   <br />
 
                   <h5 className="font-[600] text-[16px] text-white mt-[112px]">
-                  <a href="tel:+91 99208 78181">+91 99208 78181</a>
+                  <a href="tel:+91 99208 78181" className="hover:text-[teal]">+91 99208 78181</a>
                     <br />
-                    <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>
+                    <a href="mailto:contactus@analahinsurance.com" className="hover:text-[teal]">contactus@analahinsurance.com</a>
                     
                   </h5>
 
@@ -495,28 +495,28 @@ function Footer() {
                       <img
                         src={require("../Assets/Images/twitter.png")}
                         alt="twitter"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
                     <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
                       <img
                         src={require("../Assets/Images/instagram.png")}
                         alt="instagram"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
                     <a href="https://www.facebook.com/analahinsurance" target="_blank">
                       <img
                         src={require("../Assets/Images/facebook-app-symbol.png")}
                         alt="facebook"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
                     <a href="https://www.linkedin.com/company/analahinsurance/" target="_blank">
                       <img
                         src={require("../Assets/Images/linkedin.png")}
                         alt="linkedin"
-                        className="object-contain w-[25px] h-[25px]"
+                        className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
                     {/* <a  >

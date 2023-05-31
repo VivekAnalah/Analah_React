@@ -5,7 +5,7 @@ function FoundingTeam() {
   
   return (
     <div className="mr-[8.5%] ml-[8.5%]" >
-      <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-15 lg:pb-[80px] pt-[10px] lg:pt-[20px] ">
+      <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-15 lg:pb-[40px] pt-[10px] lg:pt-[20px] mb-[60px]">
         <span className="title-border-bottom">Found</span>ing Team
       </h2>
       {/* <div className="py-10 lg:py-20">
@@ -13,8 +13,8 @@ function FoundingTeam() {
       </div> */}
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
-        <div className="w-full m-auto lg:w-[32%]  flex justify-center lg:justify-start mt-auto">
-          <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div " >
+        <div className=" m-auto  flex justify-center lg:justify-start mt-auto">
+          <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[15px] pr-[20px]" >
             <img
             style={{borderRadius: "0px 80px 0px 0px"}}
               src={require("../Assets/Images/Vaishali_Dhankani.png")}
@@ -30,7 +30,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             CEO
           </h5>
-          <p className="font-normal text-base lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[14px]  2xl:text-[18px] text-[#595959] text-justify">
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector. <br />
             <br />
@@ -64,7 +64,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Co-Founder
           </h5>
-          <p className="font-normal text-base lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[14px]   2xl:text-[18px] text-[#595959] text-justify">
             Hitesh is reckoned as a reputable, thoughtful & an action oriented
             leader with proven success in Asset Management, Fundraising,
             Distribution, Sales, Marketing, Research and Advisory across
@@ -83,8 +83,8 @@ function FoundingTeam() {
             Prudential Incorporation (Pramerica AMC).
           </p>
         </div>
-        <div className="w-full lg:w-[32%] flex justify-center lg:justify-end  mt-[5px]" >
-          <div className=" flex justify-end lg:w-[100%] w-auto mt-[5px]  h-auto founding-left lg:pt-[50px] pt-[25px] founding-img-div">
+        <div className="flex justify-center lg:justify-end  mt-[5px]" >
+          <div className=" flex justify-end lg:w-[100%] w-auto mt-[5px]  h-auto founding-left pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "80px 0px 0px 0px"
@@ -100,8 +100,8 @@ function FoundingTeam() {
       <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] m-auto h-[1px]" />
 {/* -------------------------Senior Vice President-------- Satya Pravas Parida--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%]">
-        <div className="w-full  lg:w-[32%] flex justify-center lg:justify-start">
-          <div className="flex justify-start w-auto lg:w-[100%]  h-auto founding-right lg:pt-[50px] pt-[25px] founding-img-div">
+        <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-start w-auto lg:w-[100%]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "0px 80px 0px 0px"
@@ -119,7 +119,7 @@ function FoundingTeam() {
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Senior Vice President
           </h5>
-          <p className="font-normal text-base  lg:text-[14px]  xl:text-[16px]  2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base  lg:text-[14px]   2xl:text-[18px] text-[#595959] text-justify">
             Satya brings more than 23 years of experience having worked with
             leading Insurance & Stock Broking verticals. His extensive
             experience ranges across Insurance Distribution, Franchise and IFA

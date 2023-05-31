@@ -1,5 +1,5 @@
 // import { Grid, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 // import { Link } from "react-router-dom";
@@ -7,15 +7,34 @@ import "../App.css";
 
 function BecomePosp() {
   // const matches = useMediaQuery("(max-width:500px)");
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    background: isHovered
+      ? "white"
+      : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+      boxShadow: isHovered ? "5px 10px" : "",
+    color: isHovered ? "#2A44A9" : "#ffffff",
+    borderRadius: 11,
+  };
   return (
     <>
       <div className="pb-4" >
         <Header raiseClaim={true} />
         <div className="container-fluid pb-4" >
           <div className="flex flex-col sm:flex-row gap-[5%]  mt-[50px] relative items-center ">
-            <div className="flex flex-col sm:w-[50.6%] w-[80%]  ml-[4%]  order-2 sm:order-1 sm:[50%] sm:ml-[8.5%] sm:mt-[0px] mt-[15px]" >
+            <div className="flex flex-col sm:w-[50.6%] w-[80%]  ml-[4%]  order-2 sm:order-1 sm:[50%] sm:ml-[8.5%] sm:mt-[0px] mt-[45px]" >
               <div className="my-container_posp sm:space-y-[10%]  xl:pl-0  " >
-                <h2 className="font-semibold  sm:text-[25px] text-[24px] md:text-[32px] text-[#2A44A9] " >
+                <h2 className="font-semibold  sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px] text-[#2A44A9] " >
                  Become an Insurance PoSP
                   
                   <br />
@@ -23,34 +42,32 @@ function BecomePosp() {
                   Salesperson)
                 </h2>
                 <div className="  lg:w-11/12 text-justify sm:mt-0 mt-[10px]" >
-                  <h4 className="text-justify mb-[4%]   text-[15px] md:text-[20px] font-normal  text-[#595959]">
+                  <h4 className="text-justify mb-[4%]   text-[15px] 2xl:text-[20px] lg:text-[18px]   font-normal  text-[#595959]">
                     Join our growing network of Insurance Partners and work with
                     the most respected names and companies in the insurance
                     industry. Our extensive product range consists of both Life
                     & Non-life Insurance products.
                   </h4>
 
-                  <h4 className="text-justify mb-[4%] text-[15px] md:text-[20px] font-normal  text-[#595959]">
+                  <h4 className="text-justify mb-[4%] text-[15px] 2xl:text-[20px] lg:text-[18px]  font-normal  text-[#595959]">
                     We value your referrals and offer excellent commissions on
                     all our plans. So what are you waiting for? Join our team
                     today, sell insurance online as a PoSP and start earning
                     passive income!
                   </h4>
 
-                  <h4 className="text-justify mb-[4%]  text-[15px] md:text-[20px] font-bold  text-[#000]">
+                  <h4 className="text-justify mb-[4%]  text-[15px] 2xl:text-[20px] lg:text-[18px]   font-bold  text-[#000]">
                     A PoSP is a type of insurance agent who works with insurance
                     companies or brokers to sell insurance policies directly to
                     customers.
                   </h4>
-                  <div className="text-center my-6 sm:text-left sm:my-0 ">
+                  <div className="text-center my-6 sm:text-left sm:mt-[30px] sm:mb-[20px] ">
                 <a href="https://pos.analahinsurance.com/" target="blank">
                   <button
                     className="justify-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                    style={{
-                      background:
-                        "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
-                      borderRadius: 11,
-                    }}
+                    style={divStyles}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                   >
                     Become a PoSP
                   </button>
@@ -148,14 +165,14 @@ function BecomePosp() {
             />
           </div>
         </div>
-        <div className="container-fluid w-12/12 pt-2 pb-20 pl-[10%] pr-[10%]" style={{background:"#F7F8FC"}}>
+        <div className="container-fluid w-12/12 pt-[1px]  pb-20 pl-[10%] pr-[10%]" style={{background:"#F7F8FC"}}>
           <div className="my-container flex space-y-5 flex-col items-center justify-center lg:mt-20 sm:mt-20 mt-10">
-            <h2 className="font-semibold text-2xl lg:text-3xl text-[#000]">
+            <h2 className="font-semibold sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px] text-[#000] sm:mt-[-35px]">
               <span className="  sm:border-b-[5px] sm:pb-[15px] sm:border-[#2a44a9]">Why </span>become an
               Analah Insurance PoSP?{" "}
             </h2>
             <div className="my-8 flex space-y-5 flex-col  items-center justify-center text-justify ">
-              <ul className="posp-content text-[#525252] mt-4 lg:mt-16 pb-6">
+              <ul className="posp-content text-[#525252] mt-4 sm:mt-10 lg:mt-16 pb-6">
                 <li>
                   <b>Passive Income:</b> Earn passive income for each plan that
                   you sell. IRDAI sets a predetermined and fixed level of

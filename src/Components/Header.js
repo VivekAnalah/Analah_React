@@ -60,8 +60,8 @@ function Header({ policyDetails }) {
                   <h2
                     className={`${location.pathname === "/" && "active"} ${
                       matches
-                        ? "text-[12px] font-[400]"
-                        : "text-[18px] lg:text-[16px] font-[400]" 
+                        ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                        : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]" 
                       } `
                     }
                   >
@@ -74,8 +74,8 @@ function Header({ policyDetails }) {
                   <h2
                     className={`${
                       matches
-                        ? "text-[12px] font-[400]"
-                        : "text-[18px] lg:text-[16px] font-[400]"
+                        ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                        : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]"
                         
                     } ${location.pathname === "/raiseaclaim" && "active"}`
                     }
@@ -90,8 +90,8 @@ function Header({ policyDetails }) {
                   <h2
                     className={`${
                       matches
-                        ? "text-[12px] font-[400]"
-                        : "text-[18px] lg:text-[16px] font-[400]"
+                        ? "text-[12px] font-[400] hover:text-[#2a44a9]"
+                        : "text-[18px] lg:text-[16px] font-[400] hover:text-[#2a44a9]"
                       } ${location.pathname === "/become-posp" && "active"}`
                     }
                   >
@@ -110,8 +110,8 @@ function Header({ policyDetails }) {
                     <button
                       className={
                         matches
-                          ? "bg-[#2A44A9] p-[2px] h-[30px] rounded-l-[30px] w-[60px] text-[12px] text-white justify-center items-center"
-                          : "bg-[#2A44A9]  rounded-l-[30px] w-[90px] text-[18px] text-white justify-center items-center"
+                          ? "bg-[#2A44A9] p-[2px] h-[30px] rounded-l-[30px] w-[60px] text-[12px] text-white justify-center items-center hover:text-[#2a44a9] hover:bg-[#FFFFFF] border-[#2A44A9] border-[3px] "
+                          : "bg-[#2A44A9]  rounded-l-[30px] w-[90px] text-[18px] text-white justify-center items-center hover:text-[#2a44a9] hover:bg-[#FFFFFF] border-[#2A44A9] border-[3px] "
                       }
                     >
                        <a href="https://dashboard.analahinsurance.com/customer/login" target="blank">Login</a>
@@ -122,8 +122,8 @@ function Header({ policyDetails }) {
                     <button
                       className={
                         matches
-                          ? "border-[3px] border-[#2A44A9] w-[60px] p-[2px] rounded-r-[30px] text-[12px] text-[#2A44A9] justify-center items-center"
-                          : "border-[3px] border-[#2A44A9] w-[90px] py-[2px]  rounded-r-[30px] text-[18px] text-[#2A44A9] justify-center items-center"
+                          ? "border-[3px] border-[#2A44A9] w-[60px] p-[2px] rounded-r-[30px] text-[12px] text-[#2A44A9] justify-center items-center hover:bg-[#2A44A9] hover:text-[#ffffff] "
+                          : "border-[3px] border-[#2A44A9] w-[90px] py-[2px]  rounded-r-[30px] text-[18px] text-[#2A44A9] justify-center items-center hover:bg-[#2A44A9] hover:text-[#ffffff] "
                       }
                     >
                       <Link to="/sign-up" >Register</Link>

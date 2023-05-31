@@ -1,8 +1,27 @@
 // import { Grid, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
 function RaiseClaimForm() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    background: isHovered
+      ? "white"
+      : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+      boxShadow: isHovered ? "5px 10px" : "",
+    color: isHovered ? "#2A44A9" : "#ffffff",
+    borderRadius: 11,
+  };
   return (
     <>
       <div className="relative">
@@ -30,7 +49,7 @@ function RaiseClaimForm() {
                 here if you are an existing user.
               </h5>
             </div>
-            <div className="flex raiseform-wrap w-full max-w-[600px] mt-8 lg:mt-16" style={{background:'#F7F8FC'}}>
+            <div className="flex raiseform-wrap w-full max-w-[600px] mt-8 lg:mt-16 hover:shadow-blue-800 hover:shadow-md" style={{background:'#F7F8FC'}}>
               <div className="w-[100%] flex flex-col space-y-6 items-center justify-center">
                 <div className="flex flex-wrap gap-3 lg:w-[95%] justify-between">
 
@@ -124,12 +143,9 @@ function RaiseClaimForm() {
                   <div className="text-center">
                     <button
                       className="justify-center w-[100%] text-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                      style={{
-                        // background:
-                        //   "linear-gradient(180deg, #089DA6 0%, #08CADE 100%)",
-                        background: "linear-gradient(180deg, #284CD8 0%, #2A44A9 100%)",
-                        borderRadius: 11,
-                      }}
+                      style={divStyles}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     >
                       Raise Claim
                     </button>

@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import { Link } from "react-router-dom";
@@ -7,6 +7,25 @@ import { Link } from "react-router-dom";
 
 
 function InvestmentPlans() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const divStyles = {
+    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    background: isHovered
+      ? "white"
+      : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
+      boxShadow: isHovered ? "5px 10px" : "",
+    color: isHovered ? "#2A44A9" : "#ffffff",
+    borderRadius: 11,
+  };
 
   return (
     <>
@@ -14,7 +33,7 @@ function InvestmentPlans() {
         <Header raiseClaim={true} />
         <div
         id="insurance-scroll"
-        className=" mycontainer1 mx-auto lg:pb-[200px] md:pb-[150px] sm:pb-[120px] pb-[120px]   "
+        className=" mycontainer1 mx-auto lg:pb-[200px] md:pb-[150px] sm:pb-[120px] pb-[120px] "
         style={{
           background:
             "linear-gradient(-5.38deg, rgb(42, 68, 168) -107.1%, rgba(255, 255, 255, 0.06) 45.41%)",
@@ -35,7 +54,7 @@ function InvestmentPlans() {
               </h3>
               <div className="order-1 lg:order-2 flex flex-col ">
               <div className="items-center flex justify-center mt-5 lg:mt-0">
-                <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10">
+                <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10 hover:shadow-blue-800 hover:shadow-md">
                   <div className="flex flex-col space-y-6 items-center justify-center mt-[0px]  m-[auto]">
                     <h2 className="text-xl text-[#2A44A9] font-bold text-center">
                       Get the right  plan Today !
@@ -90,11 +109,9 @@ function InvestmentPlans() {
                       <div className="text-center">
                         <button
                           className="justify-center w-full sm:w-[210px] text-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                          style={{
-                            background:
-                              "linear-gradient(180deg, #2A44A9 0%, #3052D3 100%)",
-                            borderRadius: 11,
-                          }}
+                          style={divStyles}
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
                         >
                           Verify
                         </button>
