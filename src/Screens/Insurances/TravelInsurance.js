@@ -150,6 +150,8 @@ function Travel() {
         gridTopRight = {"Meaning"}
           gridHeader={"What is covered in Travel Insurance?"}
           gridText={gridText}
+
+          button_overlap = {true}
           />
     </div>
   );

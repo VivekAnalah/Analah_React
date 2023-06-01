@@ -41,6 +41,17 @@ function GuaranteedReturns() {
         }}
       >
         <div className="flex flex-col sm:flex-row lg:gap-[12.2%] xl:gap-[15.2%] md:gap-[8%] gap-[5%] termLife relative items-center mt-[40px] pb-[20px]" >
+         
+          <div className="hidden sm:order-2 sm:block flex flex-col items-center xl:ml-[5%] lg:ml-[5%]">
+           
+
+            {/* ---------- Form -------------  */}
+            <img
+              src={require(`../../Assets/Images/Guaranteed_ins.png`)}
+              alt={"Investment"}
+              className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]"
+            />
+          </div>
           <div className="lg:w-[45%] sm:w-[50%] w-[90%] order-2 sm:order-1 flex flex-col  pl-[8.5%] sm:pr-[0%] pr-[8.5%]">
             <div className=" ">
               <div className="flex items-center sm:mt-[0px] mt-[10px]">
@@ -124,35 +135,9 @@ function GuaranteedReturns() {
             </div>
             </div>
           </div>
-          <div className="hidden sm:order-2 sm:block flex flex-col items-center xl:ml-[5%] lg:ml-[5%]">
-           
-
-            {/* ---------- Form -------------  */}
-            <img
-              src={require(`../../Assets/Images/Guaranteed_ins.png`)}
-              alt={"Investment"}
-              className=" lg:w-[420px] md:w-[350px] sm:w-[250px] w-[60%]"
-            />
-          </div>
         </div>
       </div>
-      {/* Get Quote Button */}
-      {/* <div className="flex justify-center items-center relative xl:top-[-80px] lg:top-[-80px] md:top-[-80px] sm:top-[-60px] top-[-60px] ">
-        <div className="text-center items-center   h-[20px] absolute top-[0%] ">
-          <a href="" target="blank">
-            <button
-              className="justify-center items-center py-2 text-[#FFFFFF] px-10 sm:text-[18px] text-[15px] "
-              style={{
-                background: "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
-                borderRadius: 11,
-              }}
-            >
-            
-            </button>
-          </a>
-        </div>
-      </div> */}
-      <div className="relative top-[0px]">
+     <div className="relative top-[0px]">
        
 
         <div

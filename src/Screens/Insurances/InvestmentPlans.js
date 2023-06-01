@@ -130,7 +130,7 @@ function InvestmentPlans() {
             <img
               src={require(`../../Assets/Images/Invest_ins.png`)}
               alt={"Investment"}
-              className=" lg:w-[420px] md:w-[350px] sm:w-[250px] w-[60%]"
+              className=" lg:w-[320px] md:w-[250px] sm:w-[250px] w-[60%]"
             />
           </div>
         </div>

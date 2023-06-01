@@ -69,7 +69,7 @@ function Raise() {
           <div className="sm:w-1/2 order-1 sm:order-2 flex flex-col w-[70%]  sm:w-[50%]">
             <div className="">
               <div
-                className="rounded-tr-[349px] ml-auto w-auto h-full py-16 max-w-[100%] sm:max-w-[100%] xl:max-w-[100%] "
+                className="rounded-tr-[349px] ml-auto w-auto h-full py-16 max-w-[100%] sm:max-w-[100%] xl:max-w-[85%] "
                 style={{
                   background:
                     "linear-gradient(172.81deg, #2A44A9 -68.4%, rgba(255, 255, 255, 0.06) 87.56%)",

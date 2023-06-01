@@ -93,6 +93,7 @@ desc: "Under Section 80D of the Income Tax Act, employers are eligible to avail 
         benefits={benefits}
         keyTerms={keyTerms}
         quotes = {"Get Free Quotes"}
+        button_overlap = {true}
       />
     </div>
   );
