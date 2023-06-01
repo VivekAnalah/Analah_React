@@ -306,7 +306,7 @@ max-width: 200%;
 
 .title-border-bottom {
   border-bottom: 5px solid #2a44a9;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 h2.heading {
   position: relative;
@@ -548,12 +548,7 @@ h2.heading.heading2::before {
 .mycontainer_form {
   padding: 0 50px !important;
 }
-/* --------- Raise.js file Css mycontainer_raise--------- */
-.mycontainer_raise {
-  /* margin-left: 8.5%; */
-  /* border: 1px solid red; */
-  /* width: 96.6%; */
-}
+
 .policyLi {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -1466,11 +1461,7 @@ mark {
     margin: auto;
     padding: 0 10px !important;
   }
-  /* --------- Raise.js mycontainer -------------- */
-  .mycontainer_raise {
-    /* border: 1px solid red; */
-    width: 90.6%;
-  }
+ 
   .grid__partner {
     width: 100%;
     height: 120px;
@@ -1510,11 +1501,7 @@ mark {
   }
  
  
-  /* --------- Raise.js mycontainer -------------- */
-  .mycontainer_raise {
-    /* border: 1px solid red; */
-    width: 90.6%;
-  }
+ 
   .grid__partner {
     width: 100%;
     height: 120px;

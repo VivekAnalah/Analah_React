@@ -39,15 +39,15 @@ function Raise() {
       </div> */}
       <div className="">
         <div className="flex flex-col sm:flex-row gap-[6%]  mt-[50px] relative items-center">
-          <div className="mycontainer_raise sm:w-[36.6%] w-[70%] order-2 sm:order-1 flex flex-col  ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px]">
-            <div className="md:mt-[20px] space-y-5 lg:space-y-10">
-              <h2 className="font-semibold  sm:text-[25px] text-[24px] md:text-[32px] text-[#2A44A9]">
+          <div className="sm:w-[36.6%] w-[70%] order-2 sm:order-1 flex flex-col  ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px]">
+            <div className="mt-[20px] md:space-y-8 lg:space-y-10 sm:space-y-5 space-y-5">
+              <h2 className="font-semibold sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px] text-[#2A44A9]">
                 <span className="title-border-bottom ">Rais</span>e a Claim
               </h2>
-              <h3 className="md:text-[24px] leading-[30px] font-[600] text-[#000000] text-[20px] sm:text-[20px] xs:text-[16]">
+              <h3 className=" leading-[30px] font-[600] text-[#000000] text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14]">
                 Raise your claim request in only a few clicks.
               </h3>
-              <h4 className="font-[400] text-base lg:text-xl text-[#595959]">
+              <h4 className="font-[400] text-base text-[16px] 2xl:text-[20px] lg:text-[18px] md:text-[16px]  sm:text-[14] text-[#595959]">
                 You may raise a claim request, even if you did not buy your
                 policy with us.
               </h4>
