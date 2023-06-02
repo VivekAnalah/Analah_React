@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Cheacked_Context } from "../Context/Cheacked_Context";
 
 
-function Home() {
+function TermCondition() {
   const {cheacked_disclaimer,cheacked_T_C,cheacked_privacy,Set_T_C } = useContext(Cheacked_Context);
   const matches = useMediaQuery("(max-width:500px)");
   
@@ -18,7 +18,7 @@ function Home() {
       <div className=" ml-[5%] mr-[5%] mx-auto">
         <div className={matches ? "my-5 h-[10px]" : "my-8 h-[10px]"} />
         <div className="tab_container" id="privacy">
-          <input id="tab1" type="radio" name="tabs" defaultChecked={true} />
+          <input id="tab1" type="radio" name="tabs" defaultChecked={false} />
           <label for="tab1" className="tab1 ">
           <Link to={"/privacy-policy"} >Privacy Policy</Link>
           </label>
@@ -28,7 +28,7 @@ function Home() {
           <Link to={"/disclaimer"} > Disclaimer </Link>
           </label>
 
-          <input id="tab3" type="radio" name="tabs" defaultChecked={false}/>
+          <input id="tab3" type="radio" name="tabs" defaultChecked={true}/>
           <label for="tab3" className="tab3">
           <Link to={"/term-condition"} >Terms & Conditions </Link>
           </label>
@@ -1347,4 +1347,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default TermCondition;

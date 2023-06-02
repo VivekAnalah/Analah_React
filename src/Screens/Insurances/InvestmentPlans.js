@@ -99,10 +99,11 @@ function InvestmentPlans() {
                           <label htmlFor="checkBox"></label>
                         </div>
                         <Link to="/privacy-policy">
+                          
                           <p className="text-xs	px-5">
                             {" "}
-                            I hereby agree to the Privacy Policy, Disclaimer and
-                            Terms & Conditions.
+                            I hereby agree to the <Link to={"/privacy-policy"} className="text-[#2a44a9]">Privacy Policy</Link>, <Link to={"/disclaimer"} className="text-[#2a44a9]">Disclaimer</Link> and
+                            <Link to={"/term-condition"} className="text-[#2a44a9]">Terms & Conditions </Link>.
                           </p>
                         </Link>
                       </div>

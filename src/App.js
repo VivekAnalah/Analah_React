@@ -19,6 +19,8 @@ import InvestmentPlans from "./Screens/Insurances/InvestmentPlans";
 import GuaranteedReturns from "./Screens/Insurances/GuaranteedReturns";
 import Travel from "./Screens/Insurances/TravelInsurance";
 import About from "./Components/About";
+import Disclaimer from "./Screens/Disclaimer";
+import TermCondition from "./Screens/TermCondition";
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
         <Route path="/Investment" element={<InvestmentPlans />} />
         <Route path="/Guaranteed" element={<GuaranteedReturns />} />
         <Route path="/Travel" element={<Travel />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/term-condition" element={<TermCondition />} />
         {/* <Route path="/:sectionId" element={<About />} /> */}
 
 

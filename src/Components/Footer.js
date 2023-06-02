@@ -307,10 +307,10 @@ function Footer() {
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab3")}>
                     
-                    <Link to={"/privacy-policy"} >Terms & Conditions </Link>
+                    <Link to={"/term-condition"} >Terms & Conditions </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab2")}>
-                  <Link to={"/privacy-policy"} > Disclaimer </Link>
+                  <Link to={"/disclaimer"} > Disclaimer </Link>
                   </h5>
                 </div>
               </div>
@@ -429,10 +429,10 @@ function Footer() {
                     <Link to={"/privacy-policy"} >Privacy Policy</Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab3")}>
-                    <Link to={"/privacy-policy"} >Terms & Conditions </Link>
+                    <Link to={"/term-condition"} >Terms & Conditions </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[teal]"  onClick={()=>pageScroll("tab2")}>
-                   <Link to={"/privacy-policy"} > Disclaimer </Link>
+                   <Link to={"/disclaimer"} > Disclaimer </Link>
                   </h5>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../App.css";
 import { Link } from "react-router-dom";
+import Whatsapp from "./Whatsapp";
 
 function PolicyDetails({
   head,
@@ -591,6 +592,10 @@ function PolicyDetails({
       <div className="mt-[20px]">
         <Footer />
       </div>
+      {/* <div className="fixed bottom-[10%] left-[2%]">
+      <Whatsapp />
+      </div> */}
+      
     </div>
   );
 }
