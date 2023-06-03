@@ -330,11 +330,13 @@ function Footer() {
                   </h5>
                   <br />
 
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-white hover:text-[teal]">
+                  <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-white hover:text-[teal]">
+                    {/* <img src={require("../Assets/Images/phone.png")}  className="w-[16px] h-[16px]" alt="Phone"/> */}
                     <a href="tel:+91 99208 78181">+91 99208 78181</a>
                     
                   </h5>
-                  <h5 className="font-[600] text-[12px] sm:text-[16px] text-justify text-white hover:text-[teal]">
+                  <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-justify text-white hover:text-[teal]">
+                  {/* <img src={require("../Assets/Images/mail.png")}  className="sm:w-[24px] sm:h-[24px] mt-[4px] ml-[-4px] " alt="mail"/> */}
                     <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a>
                     
                     <br />
@@ -456,8 +458,10 @@ function Footer() {
                   <br />
 
                   <h5 className="font-[600] text-[16px] text-white mt-[112px]">
+                  {/* <img src={require("../Assets/Images/phone.png")} className="w-[32px] h-[32px]" alt="Phone"/> */}
                   <a href="tel:+91 99208 78181" className="hover:text-[teal]">+91 99208 78181</a>
                     <br />
+                    {/* <img src={require("../Assets/Images/mail.png")}  className="w-[32px] h-[32px]" alt="mail"/> */}
                     <a href="mailto:contactus@analahinsurance.com" className="hover:text-[teal]">contactus@analahinsurance.com</a>
                     
                   </h5>

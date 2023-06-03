@@ -84,7 +84,7 @@ setEmail("")
         e.preventDefault();
       try{
 
-        let res = await axios.post( "http://localhost:8080/signup",
+        let res = await axios.post( "https://famous-teal-raven.cyclic.app/signup",
           {
             name,
             email,

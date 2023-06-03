@@ -68,7 +68,7 @@ function GuaranteedReturns() {
               <div className="items-center flex justify-center mt-5 lg:mt-0">
                 <div className="flex raiseform-wrap2 -mr-4 rounded-tl-[130px] p-5 lg:p-10 hover:shadow-blue-800 hover:shadow-md">
                   <div className="flex flex-col space-y-6 items-center justify-center mt-[0px] m-[auto]">
-                    <h2 className="text-xl text-[#2A44A9] font-bold text-center">
+                    <h2 className="text-[18px] sm:text-xl text-[#2A44A9] font-bold text-center">
                       Get the right  plan Today !
                     </h2>
 
@@ -78,7 +78,7 @@ function GuaranteedReturns() {
                         className="input-text"
                         placeholder="Full Name"
                       />
-                      <div className="phoneInpt">
+                      <div className="sm:phoneInpt">
                         <input
                           type="number"
                           className="input-text"
