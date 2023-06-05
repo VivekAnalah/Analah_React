@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
  const  Signup = () => {
-   
+   const navigate = useNavigate();
     const [Email_valid, setEmail_valid] = useState(true);
     const [Pass_valid, setPass_valid] = useState(true);
     const [Mob_valid, setMob_valid] = useState(true);
@@ -95,6 +96,9 @@ setEmail("")
         let data = res.data;
         if(data.Status === "Ok"){
           alert(data.msg)
+          // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
+         
+
 {
   <div
   class="mb-3 inline-flex w-full items-center rounded-lg bg-success-100 px-6 py-5 text-base text-success-700"

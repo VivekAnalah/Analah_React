@@ -10,6 +10,95 @@ function GuaranteedReturns() {
 
   const [isHovered, setIsHovered] = useState(false);
 
+  const [Gurantee_User_Name, setGuarantee] = useState("");
+  const [Gurantee_User_Mail, setGuaranteeMail] = useState("");
+  const [Gurantee_User_Mob_Num, setGuaranteeMobNum] = useState("");
+  const [Gurantee_Checked, setGuaranteeChecked] = useState("");
+  const [Email_valid, setEmail_valid] = useState(true);
+  const [Mob_valid, setMob_valid] = useState(true);
+  const validEmail = (e) =>{
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(e.target.value.match(validRegex)){
+        setEmail_valid(true)
+        setGuaranteeMail(e.target.value)
+        console.log("valid")
+    }else{
+        setEmail_valid(false)
+console.log("not valid")
+setGuaranteeMail("")
+    }
+
+}
+const validMob = (e) =>{
+   
+  let regex = new RegExp(/(0|91)?[6-9][0-9]{9}/);
+  let mobile_number = e.target.value
+// if mobile_number
+// is empty return false
+if (mobile_number == null) {
+  console.log("mob not valid")
+  setGuaranteeMobNum("")
+  setMob_valid(false)
+  return "false";
+}
+
+// Return true if the mobile_number
+// matched the ReGex
+if (regex.test(mobile_number) == true) {
+  setGuaranteeMobNum(e.target.value)
+  setMob_valid(true)
+  console.log("mob valid")
+  return "true";
+}
+else {
+  console.log("mob not valid")
+  setGuaranteeMobNum("")
+  setMob_valid(false)
+  return "false";
+}
+}
+const validStyle = {
+  
+}
+const notValidStyle = {
+  border : "1px solid red"
+}
+
+const handleGuarantee = async (e) => {
+
+  e.preventDefault();
+  console.log(Gurantee_Checked, Gurantee_User_Mail, Gurantee_User_Mob_Num, Gurantee_User_Name, )
+// try{
+
+//   let res = await axios.post( "https://famous-teal-raven.cyclic.app/claim",
+//     {
+//       Gurantee_User_Name,
+//       Gurantee_User_Mail,
+//       Gurantee_User_Mob_Num,
+
+
+//     }
+//   );
+//   let data = res.data;
+//   if(data.Status === "Ok"){
+//     alert(data.msg)
+//     // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
+   
+
+
+//   }else{
+//     alert("Sorry!!  Getting Internal Error to Upload your request")
+
+
+//   }
+//  console.log(data)
+// }
+// catch(e){
+// console.log(e)
+// }
+
+}
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -77,12 +166,15 @@ function GuaranteedReturns() {
                         type="text"
                         className="input-text"
                         placeholder="Full Name"
+                        onChange={(e) => setGuarantee(e.target.value)}
                       />
                       <div className="sm:phoneInpt">
                         <input
                           type="number"
                           className="input-text"
                           placeholder="Mobile No."
+                          onChange={(e) => validMob(e)}
+                          style={Mob_valid ? validStyle : notValidStyle}
                         />
                         {/* <span>Send OTP</span> */}
                       </div>
@@ -93,9 +185,11 @@ function GuaranteedReturns() {
                       /> */}
 
                       <input
-                        type="text"
+                        type="email"
                         className="input-text"
                         placeholder="Email"
+                        onChange={(e) => validEmail(e)}
+                    style={Email_valid ? validStyle : notValidStyle}
                       />
 
                       {/* <input
@@ -107,7 +201,7 @@ function GuaranteedReturns() {
                       
                       <div className="checkbox pt-4">
                         <div className="round">
-                          <input type="checkbox" name="" id="checkBox" />
+                          <input type="checkbox" name="" id="checkBox" onClick={() => setGuaranteeChecked(!Gurantee_Checked)} />
                           <label htmlFor="checkBox"></label>
                         </div>
                         <Link to="/privacy-policy">
@@ -124,8 +218,10 @@ function GuaranteedReturns() {
                           style={divStyles}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
+                    onClick={(e) => handleGuarantee(e)}
+                    disabled={!Gurantee_Checked || !Email_valid || !Mob_valid || !Gurantee_User_Name || !Gurantee_User_Mail || !Gurantee_User_Mob_Num }
                         >
-                          Verify
+                          Get Guarantee Plans
                         </button>
                       </div>
                     </div>
