@@ -13,7 +13,7 @@ function FoundingTeam() {
       </div> */}
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
-        <div className=" m-auto  flex justify-center lg:justify-start mt-auto">
+        <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px]">
           <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[15px] pr-[20px]" >
             <img
             style={{borderRadius: "0px 80px 0px 0px"}}
@@ -23,14 +23,14 @@ function FoundingTeam() {
             />
           </div>
         </div>
-        <div className="space-y-5 w-full lg:w-[60%] teamDetails">
+        <div className="space-y-5 w-full lg:w-[60%] ">
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Vaishali Dhankani
           </h2>
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             CEO
           </h5>
-          <p className="font-normal text-base lg:text-[14px]  2xl:text-[18px] text-[#595959] text-justify">
+          <p className="font-normal text-base lg:text-[14px]  2xl:text-[18px] text-[#595959] text-justify"> 
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector. <br />
             <br />
@@ -57,7 +57,7 @@ function FoundingTeam() {
       <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] h-[1px] m-auto" />
 {/* -------------------------Co-Founder-------- Hitesh Dhankani--------------------------------------------- */}
       <div className="flex  lg:flex-row items-center gap-[8%] flex-col-reverse" >
-        <div className="space-y-5  w-full lg:w-[60%] teamDetails2" >
+        <div className="space-y-5  w-full lg:w-[60%] " >
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Hitesh Dhankani
           </h2>
@@ -83,7 +83,7 @@ function FoundingTeam() {
             Prudential Incorporation (Pramerica AMC).
           </p>
         </div>
-        <div className="flex justify-center lg:justify-end  mt-[5px]" >
+        <div className="flex justify-center lg:justify-end  mt-[5px] mb-[8px]" >
           <div className=" flex justify-end lg:w-[100%] w-auto mt-[5px]  h-auto founding-left pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
@@ -100,7 +100,7 @@ function FoundingTeam() {
       <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] m-auto h-[1px]" />
 {/* -------------------------Senior Vice President-------- Satya Pravas Parida--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%]">
-        <div className="flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:justify-start mb-[8px]">
           <div className="flex justify-start w-auto lg:w-[100%]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
@@ -112,7 +112,7 @@ function FoundingTeam() {
             />
           </div>
         </div>
-        <div className="w-full lg:w-[60%] space-y-5 mt-auto m-auto teamDetails3">
+        <div className="w-full lg:w-[60%] space-y-5 mt-auto m-auto">
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Satya Pravas Parida
           </h2>
