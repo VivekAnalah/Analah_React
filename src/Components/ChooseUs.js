@@ -78,8 +78,8 @@ function ChooseUs() {
               <h3 className="text-[16px] pt-[10px]  pb-[10px] sm:text-[22px] sm:pt-[20px]  sm:pb-[20px]  font-semibold text-center rounded-tl-[20px] rounded-tr-[20px] text-[#FFFFFF]   bg-[#2A44A9]">
                 Calculate in Minutes
               </h3>
-              <div className="sm:p-5 pt-2 pl-5 pr-5 pb-5">
-                <p className="text-gray-600 sm:text-[18px] text-[14px]">
+              <div className="sm:p-5 pt-2 pl-5 pr-5 pb-5 text">
+                <p className="text-gray-600 sm:text-[18px] text-[14px] text-center">
                   Calculate premiums like never before. All insurance quotes are
                   system generated, which eradicate the scope of any human error
                   and reduce the time needed to calculate premiums.
@@ -93,7 +93,7 @@ function ChooseUs() {
                 30+ Insurance Partners
               </h3>
               <div className="sm:p-5 pt-2 pl-5 pr-5 pb-5">
-                <p className="text-gray-600 sm:text-[18px] text-[14px]" >
+                <p className="text-gray-600 sm:text-[18px] text-[14px] text-center" >
                   Compare features and prices of multiple insurance policies
                   easily. Shortlist plans that best meet your needs.
                 </p>
@@ -110,7 +110,7 @@ function ChooseUs() {
                 Simplest Way to Get Insured
               </h3>
               <div className="sm:p-5 pt-2 pl-5 pr-5 pb-5">
-                <p className="text-gray-600 sm:text-[18px] text-[14px]">
+                <p className="text-gray-600 sm:text-[18px] text-[14px] text-center">
                   Applying for Insurance has never been easier! We have online
                   forms that ask questions based on the applicant’s demographics
                   and profile.
@@ -134,7 +134,7 @@ function ChooseUs() {
                 Claims Assistance
               </h3>
               <div className="sm:p-5 pt-2 pl-5 pr-5 pb-5">
-                <p className="text-gray-600 sm:text-[18px] text-[14px]">
+                <p className="text-gray-600 sm:text-[18px] text-[14px] text-center">
                   We know how exhausting it can get to raise a claim. We at
                   Analah Insurance, have support built in with every policy for
                   help, especially when you need it the most.

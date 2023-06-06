@@ -1,8 +1,7 @@
-import {  useMediaQuery } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import React from "react";
 
 function FoundingTeam() {
-  
   return (
     <div className="mr-[8.5%] ml-[8.5%]" >
       <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-15 lg:pb-[40px] pt-[10px] lg:pt-[20px] mb-[60px]">
@@ -13,13 +12,13 @@ function FoundingTeam() {
       </div> */}
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
-        <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px]">
+        <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px] ml-[0px]">
           <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[15px] pr-[20px]" >
             <img
-            style={{borderRadius: "0px 80px 0px 0px"}}
+              style={{ borderRadius: "0px 80px 0px 0px" }}
               src={require("../Assets/Images/Vaishali_Dhankani.png")}
               alt=" "
-              className="aspect-auto object-contain sm:h-[373px] h-[300px] w-[100%] lg:mt-auto "
+              className="aspect-auto  sm:h-[373px] h-[300px] w-[260px] lg:mt-auto "
             />
           </div>
         </div>
