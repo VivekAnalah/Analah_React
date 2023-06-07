@@ -18,7 +18,7 @@ function FoundingTeam() {
               style={{ borderRadius: "0px 80px 0px 0px" }}
               src={require("../Assets/Images/Vaishali_Dhankani.png")}
               alt=" "
-              className="aspect-auto  sm:h-[373px] h-[300px] w-[260px] lg:mt-auto "
+              className="aspect-auto  sm:h-[373px] h-[300px] w-[100%] lg:mt-auto "
             />
           </div>
         </div>
