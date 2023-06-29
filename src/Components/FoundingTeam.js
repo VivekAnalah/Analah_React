@@ -1,4 +1,4 @@
-import { useMediaQuery } from "@mui/material";
+
 import React from "react";
 
 function FoundingTeam() {
@@ -13,12 +13,12 @@ function FoundingTeam() {
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
         <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px] ml-[0px] 2xl:w-[25%]">
-          <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[0px] pr-[0px]" >
+          <div className="flex justify-start w-[auto] mt-auto h-auto founding-right founding-img-div pl-[0px] pr-[0px]" >
             <img
               style={{ borderRadius: "0px 80px 0px 0px" }}
               src={require("../Assets/Images/Vaishali_Dhankani2.png")}
               alt=" "
-              className="aspect-auto  sm:h-[373px] h-[300px] w-[100%] lg:mt-auto "
+              className="aspect-auto  sm:h-[373px] h-[300px] lg:mt-auto "
             />
           </div>
         </div>
@@ -83,14 +83,14 @@ function FoundingTeam() {
           </p>
         </div>
         <div className=" m-auto flex justify-center lg:justify-end  mt-[auto] mb-[8px] lg:mr-[0px] 2xl:w-[25%]" >
-          <div className=" flex justify-end lg:w-[100%] w-[auto] mt-[auto]  h-auto founding-left founding-img-div pl-[20px] pr-[20px]">
+          <div className=" flex justify-end  w-[auto] mt-[auto]  h-auto founding-left founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "80px 0px 0px 0px"
             }}
               src={require("../Assets/Images/hitesh_dhankani4.png")}
               alt=" "
-              className="aspect-auto w-[100%]   h-[300px] sm:h-[373px]  lg:mt-[auto]"
+              className="aspect-auto   h-[300px] sm:h-[373px]  lg:mt-[auto]"
             />
           </div>
         </div>
@@ -100,14 +100,14 @@ function FoundingTeam() {
 {/* -------------------------Senior Vice President-------- Satya Pravas Parida--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%]">
         <div className="m-auto flex justify-center lg:justify-start  mb-[8px] 2xl:w-[25%]">
-          <div className="flex justify-start w-auto lg:w-[100%] mt-[auto]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
+          <div className="flex justify-start w-auto  mt-[auto]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "0px 80px 0px 0px"
             }}
               src={require("../Assets/Images/satya_pravas.png")}
               alt=" "
-              className="aspect-auto  w-[100%] sm:h-[343px] h-[300px] lg:mt-auto  "
+              className="aspect-auto   sm:h-[343px] h-[300px] lg:mt-auto  "
             />
           </div>
         </div>
