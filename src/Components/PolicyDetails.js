@@ -195,7 +195,7 @@ function PolicyDetails({
             src={require("../Assets/Images/rightTriangle.png")}
             className="object-contain aspect-auto sm:w-[100px] w-[0px] absolute sm:top-[1%] top-[2.5%]  h-auto rotate-180"
           />
-          <div className="bg-[#F5F5F5] pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-10 lg:pb-20">
+          <div className={ gridText ? "bg-[#F5F5F5] pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-20" : "bg-[#F5F5F5] pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-10 lg:pb-20"}>
             <div>
               <h2 className="font-semibold my-3 lg:my-5 lg:m-0 pb-8 lg:pb-11 text-center sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px]">
                 <span className=" sm:border-b-[5px] sm:pb-[15px] sm:border-[#2a44a9]">
@@ -206,16 +206,16 @@ function PolicyDetails({
             </div>
             <div>
               {RetirementInsurance ? (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                   Retirement or Pension Plans
                 </h2>
               ) : (
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                   {head}
                 </h2>
               )}
 
-              <p className="text-[#595959] text-base lg:text-lg text-justify pb-7 lg:pb-14">
+              <p className="text_font text-justify pb-7 lg:pb-14">
                 {description_1}
 
                 {description_2 ? (
@@ -241,14 +241,14 @@ function PolicyDetails({
               </p>
               {why ? (
                 <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     Why {helping_verb} {head} essential?
                   </h2>{" "}
                   <ul className="list-disc ml-4 mb-10">
                     {whyText.map((item, index) => {
                       return (
                         <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          className="text_font text-justify mb-4 lg:mb-6"
                           key={index}
                         >
                           <span className="font-[600]">{item.desc_head}</span>{" "}
@@ -263,10 +263,10 @@ function PolicyDetails({
               )}
               {what ? (
                 <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     What is Travel Insurance?
                   </h2>{" "}
-                  <p className="text-[#595959] text-base lg:text-lg text-justify">
+                  <p className="text_font text-justify">
                     {whatDefinition}
                   </p>
                   <p className="text-[#595959] font-[600] text-base lg:text-lg text-justify mb-4 mt-4 lg:mb-6">
@@ -277,7 +277,7 @@ function PolicyDetails({
                       whatText.map((item, index) => {
                         return (
                           <li
-                            className="text-[#595959] text-base lg:text-base text-justify mb-4 lg:mb-6"
+                            className="text_font text-justify mb-4 lg:mb-6"
                             key={index}
                           >
                             <span className="font-[600]">{item.desc_head}</span>{" "}
@@ -294,14 +294,14 @@ function PolicyDetails({
                 ""
               ) : (
                 <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     {benefit_head}
                   </h2>
                   <ul className="list-disc ml-4 mb-10">
                     {benefits.map((item, index) => {
                       return (
                         <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          className="text_font text-justify mb-4 lg:mb-6"
                           key={index}
                         >
                           <span className="font-[600]">{item.desc_head}</span>{" "}
@@ -314,10 +314,10 @@ function PolicyDetails({
               )}
               {twoWheel ? (
                 <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     {benefit_head}
                   </h2>
-                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                  <p className="text_font text-justify mb-4 lg:mb-6">
                     Bike insurance in India offers several benefits to
                     policyholders. Some of the key advantages include:
                   </p>
@@ -325,7 +325,7 @@ function PolicyDetails({
                     {benefits.map((item, index) => {
                       return (
                         <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          className="text_font text-justify mb-4 lg:mb-6"
                           key={index}
                         >
                           <span className="font-[600]">{item.desc_head}</span>{" "}
@@ -334,7 +334,7 @@ function PolicyDetails({
                       );
                     })}
                   </ul>{" "}
-                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6 font-[600]">
+                  <p className="text_font text-justify mb-4 lg:mb-6 font-[600]">
                     It is important to carefully assess the coverage, terms, and
                     conditions offered by different insurance providers and
                     choose a policy that best suits your requirements and
@@ -348,10 +348,10 @@ function PolicyDetails({
               <div className={matches ? "my-2 h-[10px]" : "my-4 h-[10px]"} />
               {twoWheel ? (
                 <>
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     How to choose a Two-wheeler Insurance Policy?
                   </h2>
-                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                  <p className="text_font text-justify mb-4 lg:mb-6">
                     Once you understand the significance of having a bike
                     insurance policy, the subsequent step is to familiarize
                     yourself with the types of bike insurance policies
@@ -362,7 +362,7 @@ function PolicyDetails({
                     other hand, a comprehensive bike insurance plan offers
                     coverage for both you and the third party involved.
                   </p>
-                  <p className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6">
+                  <p className="text_font text-justify mb-4 lg:mb-6">
                     Nevertheless, similar to any other purchase, it is crucial
                     to conduct thorough research and compare your needs with
                     affordability before buying a bike insurance policy. Here
@@ -373,7 +373,7 @@ function PolicyDetails({
               ) : homeInsurance ? (
                 <></>
               ) : (
-                <h2 className="text-[#2A44A9] text-xl  lg:text-2xl font-semibold mb-7">
+                <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                   {key_feature_head}
                 </h2>
               )}
@@ -384,7 +384,7 @@ function PolicyDetails({
                   {keyTerms.map((item, index) => {
                     return (
                       <li
-                        className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                        className="text_font text-justify mb-4 lg:mb-6"
                         key={index}
                       >
                         {car && item.id == 3 ? (
@@ -397,8 +397,8 @@ function PolicyDetails({
                             <li
                               className={
                                 matches
-                                  ? "text-[#595959] text-[14px] text-justify my-1 ml-[6%]"
-                                  : "text-[#595959] text-[16px] text-justify my-3 ml-[5%]"
+                                  ? "text_font text-justify my-1 ml-[6%]"
+                                  : "text_font text-justify my-3 ml-[5%]"
                               }
                             >
                               The type of Vehicle, Model Number, Fuel Type,
@@ -407,8 +407,8 @@ function PolicyDetails({
                             <li
                               className={
                                 matches
-                                  ? "text-[#595959] text-[14px] text-justify my-1 ml-[6%]"
-                                  : "text-[#595959] text-[16px] text-justify my-3 ml-[5%]"
+                                  ? "text_font text-justify my-1 ml-[6%]"
+                                  : "text_font text-justify my-3 ml-[5%]"
                               }
                             >
                               The city
@@ -416,8 +416,8 @@ function PolicyDetails({
                             <li
                               className={
                                 matches
-                                  ? "text-[#595959] text-[14px] text-justify my-1 ml-[6%]"
-                                  : "text-[#595959] text-[16px] text-justify my-3 ml-[5%]"
+                                  ? "text_font text-justify my-1 ml-[6%]"
+                                  : "text_font text-justify my-3 ml-[5%]"
                               }
                             >
                               Age and profession
@@ -425,8 +425,8 @@ function PolicyDetails({
                             <li
                               className={
                                 matches
-                                  ? "text-[#595959] text-[14px] text-justify my-1 ml-[6%]"
-                                  : "text-[#595959] text-[16px] text-justify my-3 ml-[5%]"
+                                  ? "text_font text-justify my-1 ml-[6%]"
+                                  : "text_font text-justify my-3 ml-[5%]"
                               }
                             >
                               Accessories added or any modifications made in the
@@ -436,8 +436,8 @@ function PolicyDetails({
                             <p
                               className={
                                 matches
-                                  ? "text-[#595959] text-[14px] text-justify my-1 font-[600]"
-                                  : "text-[#595959] text-[16px] text-justify my-3 font-[600]"
+                                  ? " text_font text-justify my-1 font-[600]"
+                                  : "text_font text-justify my-3 font-[600]"
                               }
                             >
                               These are the factors that determine Car Insurance
@@ -466,26 +466,26 @@ function PolicyDetails({
 
             {gridHeader ? (
               <>
-                <div className="w-[100%]">
-                  <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                <div className="w-[100%] mb-[15px]">
+                  <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                     {gridHeader}
                   </h2>
 
                   <div className="flex gap-[5px] mt-[5px]">
-                    <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
+                    <div className="w-[30%]   font-[600] text_font bg-[#FFFFFF] p-[2%] flex  items-center">
                       {gridTopLeft}
                     </div>
-                    <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF] font-[600]">
+                    <div className=" p-[2%] w-[70%] text-justify text_font  bg-[#FFFFFF] font-[600]">
                       {gridTopRight}
                     </div>
                   </div>
                   {gridText &&
                     gridText.map((text, index) => (
                       <div className="flex gap-[5px] mt-[5px]" key={index}>
-                        <div className="w-[30%] text-[#595959] text-base font-[600]  bg-[#FFFFFF] p-[2%] flex  items-center">
+                        <div className="w-[30%]  font-[600] text_font  bg-[#FFFFFF] p-[2%] flex  items-center">
                           {text.title}
                         </div>
-                        <div className="text-[#595959] text-base p-[2%] w-[70%] text-justify  bg-[#FFFFFF]">
+                        <div className="text_font p-[2%] w-[70%] text-justify  bg-[#FFFFFF]">
                           {text.desc}
                         </div>
                       </div>
@@ -498,7 +498,7 @@ function PolicyDetails({
             {/* Why required section for Car  */}
             {isRequired ? (
               <>
-                <h2 className="text-[#2A44A9] text-xl lg:text-2xl font-semibold mb-7">
+                <h2 className="text-[#2A44A9] text-[18px] lg:text-[23px] font-semibold mb-7">
                   {whyRequired_head}
                 </h2>
                 <ul className="list-disc ml-4 mb-10">
@@ -506,7 +506,7 @@ function PolicyDetails({
                     whyRequired_Text.map((item, index) => {
                       return (
                         <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          className="text_font text-justify mb-4 lg:mb-6"
                           key={index}
                         >
                           <span className="font-[600]">
@@ -528,7 +528,7 @@ function PolicyDetails({
                 <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
                   Add-ons in a Car Insurance Policy
                 </p>
-                <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
+                <p className="text_font ml-[16px] text-justify mb-4 lg:mb-6">
                   In addition to the standard Car Insurance coverage, Insurance
                   companies also offer ‘Add-on Covers’, which are additional
                   covers that protect your car and offer extra coverage. By
@@ -543,7 +543,7 @@ function PolicyDetails({
                     add_ons_array.map((item, index) => {
                       return (
                         <li
-                          className="text-[#595959] text-base lg:text-lg text-justify mb-4 lg:mb-6"
+                          className="text_font text-justify mb-4 lg:mb-6"
                           key={index}
                         >
                           <span className="font-[600]">
@@ -557,7 +557,7 @@ function PolicyDetails({
                 <p className="text-[#595959] font-[600]  text-[20px]  ml-[16px] mb-6">
                   Documents required to Raise Car Insurance Claim:
                 </p>
-                <p className="text-[#595959] text-base lg:text-lg ml-[16px] text-justify mb-4 lg:mb-6">
+                <p className="text_font ml-[16px] text-justify mb-4 lg:mb-6">
                   There is no actual paperwork required to raise a claim against
                   your policy. The following documents must instead be uploaded
                   digitally via our digital platform (mobile website/app).
@@ -568,7 +568,7 @@ function PolicyDetails({
                   {document_data.map((item, index) => {
                     return (
                       <li
-                        className="text-[#595959] text-base lg:text-lg text-justify  ml-[5%]"
+                        className="text_font text-justify  ml-[5%]"
                         key={index}
                       >
                         {item.require}

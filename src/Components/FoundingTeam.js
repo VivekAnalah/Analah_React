@@ -12,24 +12,24 @@ function FoundingTeam() {
       </div> */}
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
-        <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px] ml-[0px]">
-          <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[15px] pr-[20px]" >
+        <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px] ml-[0px] 2xl:w-[25%]">
+          <div className="flex justify-start lg:w-[100%] w-[auto] mt-auto h-auto founding-right founding-img-div pl-[0px] pr-[0px]" >
             <img
               style={{ borderRadius: "0px 80px 0px 0px" }}
-              src={require("../Assets/Images/Vaishali_Dhankani.png")}
+              src={require("../Assets/Images/Vaishali_Dhankani2.png")}
               alt=" "
               className="aspect-auto  sm:h-[373px] h-[300px] w-[100%] lg:mt-auto "
             />
           </div>
         </div>
-        <div className="space-y-5 w-full lg:w-[60%] ">
+        <div className="space-y-5 w-full lg:w-[60%] 2xl:w-[72%]">
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Vaishali Dhankani
           </h2>
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             CEO
           </h5>
-          <p className="font-normal text-base lg:text-[14px]  2xl:text-[18px] text-[#595959] text-justify"> 
+          <p className="text_font text-justify"> 
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector. <br />
             <br />
@@ -56,14 +56,14 @@ function FoundingTeam() {
       <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] h-[1px] m-auto" />
 {/* -------------------------Co-Founder-------- Hitesh Dhankani--------------------------------------------- */}
       <div className="flex  lg:flex-row items-center gap-[8%] flex-col-reverse" >
-        <div className="space-y-5  w-full lg:w-[60%] " >
+        <div className="space-y-5  w-full lg:w-[60%] 2xl:w-[72%]" >
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Hitesh Dhankani
           </h2>
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Co-Founder
           </h5>
-          <p className="font-normal text-base lg:text-[14px]   2xl:text-[18px] text-[#595959] text-justify">
+          <p className="text_font text-justify">
             Hitesh is reckoned as a reputable, thoughtful & an action oriented
             leader with proven success in Asset Management, Fundraising,
             Distribution, Sales, Marketing, Research and Advisory across
@@ -82,15 +82,15 @@ function FoundingTeam() {
             Prudential Incorporation (Pramerica AMC).
           </p>
         </div>
-        <div className="flex justify-center lg:justify-end  mt-[5px] mb-[8px]" >
-          <div className=" flex justify-end lg:w-[100%] w-auto mt-[5px]  h-auto founding-left pt-[25px] founding-img-div pl-[20px] pr-[20px]">
+        <div className=" m-auto flex justify-center lg:justify-end  mt-[auto] mb-[8px] lg:mr-[0px] 2xl:w-[25%]" >
+          <div className=" flex justify-end lg:w-[100%] w-[auto] mt-[auto]  h-auto founding-left founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "80px 0px 0px 0px"
             }}
-              src={require("../Assets/Images/hitesh_dhankani.png")}
+              src={require("../Assets/Images/hitesh_dhankani4.png")}
               alt=" "
-              className="aspect-auto w-[100%] object-contain m-[auto]   h-[300px] sm:h-[323px] 2xl:h-[353px] "
+              className="aspect-auto w-[100%]   h-[300px] sm:h-[373px]  lg:mt-[auto]"
             />
           </div>
         </div>
@@ -99,26 +99,26 @@ function FoundingTeam() {
       <div className="mb-8 mt-[20px] lg:mb-16 bg-[#2A44A9] m-auto h-[1px]" />
 {/* -------------------------Senior Vice President-------- Satya Pravas Parida--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%]">
-        <div className="flex justify-center lg:justify-start mb-[8px]">
-          <div className="flex justify-start w-auto lg:w-[100%]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
+        <div className="m-auto flex justify-center lg:justify-start  mb-[8px] 2xl:w-[25%]">
+          <div className="flex justify-start w-auto lg:w-[100%] mt-[auto]  h-auto founding-right  pt-[25px] founding-img-div pl-[20px] pr-[20px]">
             <img
             style={{
               borderRadius: "0px 80px 0px 0px"
             }}
               src={require("../Assets/Images/satya_pravas.png")}
               alt=" "
-              className="aspect-auto object-contain w-[100%] sm:h-[320px] h-[300px] lg:mt-auto 2xl:h-[353px] "
+              className="aspect-auto  w-[100%] sm:h-[343px] h-[300px] lg:mt-auto  "
             />
           </div>
         </div>
-        <div className="w-full lg:w-[60%] space-y-5 mt-auto m-auto">
+        <div className="w-full lg:w-[60%] space-y-5 mt-auto m-auto 2xl:w-[72%]">
           <h2 className="text-[#2A44A9] pt-5 lg:pt-0 font-semibold text-2xl lg:text-3xl text-center lg:text-left">
             Satya Pravas Parida
           </h2>
           <h5 className="founder-position font-normal text-xl lg:text-xl text-[#000] text-center lg:text-left">
             Senior Vice President
           </h5>
-          <p className="font-normal text-base  lg:text-[14px]   2xl:text-[18px] text-[#595959] text-justify">
+          <p className="text_font text-justify">
             Satya brings more than 23 years of experience having worked with
             leading Insurance & Stock Broking verticals. His extensive
             experience ranges across Insurance Distribution, Franchise and IFA

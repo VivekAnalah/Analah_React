@@ -1,12 +1,12 @@
-// import { Grid, useMediaQuery } from "@mui/material";
+
 import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-// import { Link } from "react-router-dom";
+
 import "../App.css";
 
 function BecomePosp() {
-  // const matches = useMediaQuery("(max-width:500px)");
+
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -18,7 +18,7 @@ function BecomePosp() {
   };
 
   const divStyles = {
-    // border : isHovered ? "0.5px solid #2A44A9" : "",
+    
     background: isHovered
       ? "white"
       : "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)",
@@ -79,65 +79,7 @@ function BecomePosp() {
             <div className=" flex flex-col order-1 sm:order-2 w-[70%] sm:w-[50%]" style={{background: 'linear-gradient(171.81deg, #2A44A9 -68.4%, rgba(255, 255, 255, 0.06) 80.56%)', borderRadius: '280.5px 0px 0px 0px'}} >
               <div className="items-center flex justify-center mt-10 lg:mt-8">
                 <div className="flex rounded-tl-[130px] p-5 lg:p-10">
-                  {/* <div className="flex flex-col space-y-6 items-center justify-center mt-[0px]">
-                    <h2 className="text-xl text-[#000000] font-bold text-center">
-                      Register Now!
-                    </h2>
-
-                    <div>
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Full Name (Name as per PAN card)"
-                      />
-                      <div className="phoneInpt">
-                        <input
-                          type="text"
-                          className="input-text"
-                          placeholder="Mobile No. "
-                        />
-                        <span>Send OTP</span>
-                      </div>
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Enter OTP"
-                      />
-
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Email"
-                      />
-
-                      <input
-                        type="text"
-                        className="input-text"
-                        placeholder="Enter PAN Card Number"
-                      />
-                      <div className="checkbox pt-4">
-                        <div className="round">
-                          <input type="checkbox" name="" id="checkBox" />
-                          <label htmlFor="checkBox"></label>
-                        </div>
-                        <Link to="/privacy-policy"><p className="text-xs px-5"> I hereby agree to the Privacy Policy, Disclaimer and
-                            Terms & Conditions.
-                        </p></Link>
-                      </div>
-                      <div className="text-center">
-                        <button
-                          className="justify-center w-full sm:w-[210px] text-center items-center py-2 text-[#FFFFFF] px-10 text-[18px]"
-                          style={{
-                            background:
-                              "linear-gradient(180deg, #2A44A9 0%, #3052D3 100%)",
-                            borderRadius: 11,
-                          }}
-                        >
-                          Verify
-                        </button>
-                      </div>
-                    </div>
-                  </div> */}
+                 
                   <img
                   alt="insurance"
                   src={require("../Assets/Images/Asset 15.png")}
@@ -171,8 +113,8 @@ function BecomePosp() {
               <span className="  sm:border-b-[5px] sm:pb-[15px] sm:border-[#2a44a9]">Why </span>become an
               Analah Insurance PoSP?{" "}
             </h2>
-            <div className="my-8 flex space-y-5 flex-col  items-center justify-center text-justify ">
-              <ul className="posp-content text-[#525252] mt-4 sm:mt-10 lg:mt-16 pb-6">
+            <div className="my-8 flex  flex-col  items-center justify-center text-justify ">
+              <ul className="posp-content text_font mt-4 sm:mt-10 lg:mt-16 pb-6">
                 <li>
                   <b>Passive Income:</b> Earn passive income for each plan that
                   you sell. IRDAI sets a predetermined and fixed level of
@@ -216,12 +158,11 @@ function BecomePosp() {
                   helps you track your performance and records.
                 </li>
               </ul>
-
-              <h5 className="font-bold text-lg lg:text-2xl w-full text-left text-[#2A44A9]">
+              <h5 className="font-bold text-[18px] lg:text-[23px] text-[#2A44A9] w-full text-left ">
                 Eligibility to become a PoSP:
               </h5>
-
-              <ul className="posp-content posp-content2 text-left mr-[auto] text-[#525252] lg:pt-4">
+              
+              <ul className="posp-content posp-content2 text_font text-left mr-[auto]  lg:pt-4 gap_issue" >
                 <li>
                   <b>At least 18 years of age</b>
                 </li>
@@ -236,11 +177,12 @@ function BecomePosp() {
                 </li>
               </ul>
 
-              <h5 className="font-bold text-lg lg:text-2xl w-full text-left text-[#2A44A9]">
+             
+              <h5 className="font-bold text-[18px] lg:text-[23px] w-full text-left text-[#2A44A9] mt-[15px]">
                 Simple Steps to Become an IRDAI PoSP:
               </h5>
 
-              <ul className="posp-content posp-content2 text-left mr-[auto] text-[#525252] lg:pt-3">
+              <ul className="posp-content posp-content2 text_font text-left mr-[auto]  lg:pt-3 gap_issue">
                 <li>
                   <b>Registration and Complete your KYC</b>
                 </li>
@@ -254,7 +196,17 @@ function BecomePosp() {
                   <b>IRDAI Approved Certification</b>
                 </li>
               </ul>
+
+
+             
+
+
+
+              
             </div>
+          
+
+            
           </div>
         </div>
       </div>

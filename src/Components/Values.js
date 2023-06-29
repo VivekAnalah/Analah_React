@@ -56,7 +56,7 @@ function About() {
         <h2 className="font-semibold text-2xl lg:text-3xl text-center m-auto lg:pb-[30px] pb-[0px]">
         <span className="title-border-bottom">Value</span>s
         </h2>
-        <h5 className="font-normal text-base lg:text-[14px] xl:text-[16px] 2xl:text-[18px]  text-center text-[#595959] my-1 pt-[30px]">
+        <h5 className=" text_font text-center  my-1 pt-[30px]">
           At Analah Insurance, we believe our values shape and define the
           culture of our company. Our values serve the foundation on how we work
           and make our business decisions.
@@ -113,7 +113,7 @@ function About() {
             {title}
           </span>
         </h3>
-        <h5 className="font-normal text-base lg:text-0.5xl text-[14px] text-center lg:w-7/12 pt-6  text-[#595959] ">
+        <h5 className="font-normal text-base lg:text-0.5xl text-[14px] text-center lg:w-7/12 pt-6  text-[#525252] ">
           {value}
         </h5>
       </div>

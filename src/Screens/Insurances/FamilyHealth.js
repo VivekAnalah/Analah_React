@@ -81,8 +81,8 @@ desc_head : "",
         list4={"Get plan recommendation in seconds"}
         img={"Family_ins"}
         Ins_Text_1 ={"Secure your"}
-        Ins_Text_2 ={"Family's Future"}
-        Ins_Text_3 ={"now."}
+        Ins_Text_2 ={"Family's Future now."}
+       
         description_1={
           "Family Health Insurance plans are health care policies that cover the entire family. The Family Health Insurance plans offer coverage to every member of the family on a single premium. This means that you do not need to pay separate premiums for each person, regardless of their age. Most Family Health Insurance plans in India, cover spouses, children, parents and even parents-in-law under a single policy."
         }
