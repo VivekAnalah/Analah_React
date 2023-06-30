@@ -110,7 +110,7 @@ setEmail("")
         setTimeout(() => {
           setAlertVisible(false);
          
-        }, 2000);
+        }, 5000);
         }
        console.log(data)
       }
