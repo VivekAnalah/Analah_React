@@ -1,13 +1,10 @@
-import { Grid, useMediaQuery } from "@mui/material";
+import {  useMediaQuery } from "@mui/material";
 import React from "react";
-import About from "../Components/About";
-import Values from "../Components/Values";
-import ChooseUs from "../Components/ChooseUs";
+
 import Footer from "../Components/Footer";
-import FoundingTeam from "../Components/FoundingTeam";
+
 import Header from "../Components/Header";
-import Insurance from "../Components/Insurance";
-import OurPartner from "../Components/OurPartner";
+
 import Raise from "../Components/Raise";
 import Howitworks from "../Components/Howitworks";
 import RaiseClaimForm from "../Components/RaiseClaimForm";

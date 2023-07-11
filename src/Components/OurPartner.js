@@ -1,161 +1,20 @@
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
+import React from "react";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Grid, Navigation, Pagination } from "swiper";
+
 
 function OurPartner() {
   const our_partner = new Array(25).fill(0)
-  const data = [
-    {
-      id: 1,
-      img: "logo/1.png",
-    },
-    {
-      id: 8,
-      img: "logo/2.png",
-    },
-    {
-      id: 3,
-      img: "logo/3.png",
-    },
-    {
-      id: 4,
-      img: "logo/4.png",
-    },
-    {
-      id: 5,
-      img: "logo/5.png",
-    },
-    {
-      id: 6,
-      img: "logo/6.png",
-    },
-    {
-      id: 7,
-      img: "logo/7.png",
-    },
-    {
-      id: 8,
-      img: "logo/8.png",
-    },
-    {
-      id: 9,
-      img: "logo/9.png",
-    },
-    {
-      id: 10,
-      img: "logo/10.png",
-    },
-    {
-      id: 11,
-      img: "logo/11.png",
-    },
-    {
-      id: 12,
-      img: "logo/12.png",
-    },
-    {
-      id: 13,
-      img: "logo/13.png",
-    },
-    {
-      id: 14,
-      img: "logo/14.png",
-    },
-    {
-      id: 15,
-      img: "logo/15.png",
-    },
-    {
-      id: 16,
-      img: "logo/16.png",
-    },
-    {
-      id: 17,
-      img: "logo/17.png",
-    },
-    {
-      id: 18,
-      img: "logo/18.png",
-    },
-    {
-      id: 19,
-      img: "logo/19.png",
-    },
-    {
-      id: 20,
-      img: "logo/20.png",
-    },
-    {
-      id: 21,
-      img: "logo/21.png",
-    },
-  ];
+ 
 
-  const data1 = [
-    {
-      id: 1,
-      img: "logo/11.png",
-    },
-    {
-      id: 2,
-      img: "logo/12.png",
-    },
-    {
-      id: 3,
-      img: "logo/13.png",
-    },
-    {
-      id: 4,
-      img: "logo/14.png",
-    },
-    {
-      id: 5,
-      img: "logo/15.png",
-    },
-    {
-      id: 6,
-      img: "logo/16.png",
-    },
-    {
-      id: 7,
-      img: "logo/17.png",
-    },
-    {
-      id: 8,
-      img: "logo/18.png",
-    },
-    {
-      id: 9,
-      img: "logo/19.png",
-    },
-    {
-      id: 10,
-      img: "logo/20.png",
-    },
-  ];
 
-  const data2 = [
-    {
-      id: 1,
-      img: "logo/21.png",
-    },
-  ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const next = () => {
-    setCurrentSlide(currentSlide + 1);
-  };
-
-  const prev = () => {
-    setCurrentSlide(currentSlide - 1);
-  };
+  
 
   return (
     <div className="mt-[50px]">
@@ -194,47 +53,7 @@ function OurPartner() {
           
         </div>
 
-        {/* <Swiper
         
-          slidesPerView={5}
-          grid={{
-            rows: 2,
-          }}
-          grabCursor={true}
-          slidespercolumn={2}
-          spaceBetween={10}
-          loop={true}
-          breakpoints={{
-            0: {
-              slidesPerView: 2,
-              slidespercolumn: 2,
-            },
-            640: {
-              slidesPerView: 2,
-              slidespercolumn: 2,
-            },
-            768: {
-              slidesPerView: 2,
-              slidesPerColumn: 2,
-            },
-            1024: {
-              slidesPerView: 5,
-              slidesPerColumn: 2,
-            },
-          }}
-          navigation={true}
-          modules={[Grid, Navigation]}
-        >
-          {data.map((item, index) => (
-            <SwiperSlide key={index} style={{ width: "90px" }}>
-              <img
-                src={require(`../Assets/Images/${item.img}`)}
-                alt="carousels"
-                className="object-contain aspect-auto w-[80%] h-full"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
 
       </div>
     </div>

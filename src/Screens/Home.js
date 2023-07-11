@@ -1,5 +1,5 @@
-import { Grid, useMediaQuery } from "@mui/material";
-import React, { useEffect, useRef } from "react";
+import {  useMediaQuery } from "@mui/material";
+import React from "react";
 import About from "../Components/About";
 import Values from "../Components/Values";
 import ChooseUs from "../Components/ChooseUs";
@@ -9,7 +9,7 @@ import Header from "../Components/Header";
 import Insurance from "../Components/Insurance";
 import OurPartner from "../Components/OurPartner";
 import "../App.css";
-import { ImportantDevices } from "@mui/icons-material";
+
 
 
 const insurance_data = [
@@ -103,7 +103,7 @@ function Home() {
                 return (
                   <div
                   key={index}
-                    className="bg-[#FFFFFF] text-center rounded-[20px] hover:scale-110"f
+                    className="bg-[#FFFFFF] text-center rounded-[20px] hover:scale-110"
                     style={{
                       boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                     }}

@@ -1,7 +1,7 @@
-import { Grid, useMediaQuery } from "@mui/material";
+
 import React, { useState } from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+
 // --------- CSS Module Added ----------------
 // import Raise_css from "../Styles/Raise.module.css"
 
@@ -27,16 +27,7 @@ function Raise() {
   };
   return (
     <>
-      {/* <div className=" policy-buttons justify-end flex flex-row pr-5">
-     <Link to="/privacy-policy" > <button className="justify-center rounded-b-[11px] items-center py-2 text-[#FFFFFF] px-10 lg:text-[16px] sm:text-[10px]" style={{background:"#2A44A9"}}>Privacy Policy</button>
-       </Link> 
-         <Link to="/privacy-policy" ><button className="justify-center items-center rounded-b-[11px] py-2 text-[#FFFFFF] px-10 lg:text-[16px] sm:text-[10px]" style={{background:"#2A44A9"}}>Disclaimer</button>
-       </Link> 
-         
-         <Link to="/privacy-policy" ><button className="justify-center items-center rounded-b-[11px] py-2 text-[#FFFFFF] px-10 lg:text-[16px] sm:text-[10px]" style={{background:"#2A44A9"}}>Terms & Conditions</button>
-       </Link> 
-      
-      </div> */}
+     
       <div className="">
         <div className="flex flex-col sm:flex-row gap-[6%]  mt-[50px] relative items-center">
           <div className="sm:w-[36.6%] w-[70%] order-2 sm:order-1 flex flex-col  ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px]">
@@ -81,7 +72,7 @@ function Raise() {
                   src={require("../Assets/Images/Raise_claim.png")}
                   className="pt-16  md:h-[50vh]  h-[250px]  mx-auto"
                 />
-                {/* h-[500px] */}
+                
               </div>
             </div>
           </div>

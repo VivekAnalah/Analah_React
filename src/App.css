@@ -1664,17 +1664,8 @@ mark {
   }
 }
 /* --------------------------------------- */
-/* #raise-button{
-  background-color:
-    "linear-gradient(180deg, #2A44A9 0%, #3654CA 100%)";
-  border-radius : 11;
- 
- 
-} */
-/* #raise-button:hover{
-  background-color: "white";
-  border: "1px solid red";
-} */
+
+
 
 @media only screen and (max-width: 1294px) and (min-width: 1280px) {
   .button_overlap {

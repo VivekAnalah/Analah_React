@@ -7,9 +7,7 @@ function FoundingTeam() {
       <h2 className="font-semibold text-2xl lg:text-3xl text-center pb-15 lg:pb-[40px] pt-[10px] lg:pt-[20px] mb-[60px]">
         <span className="title-border-bottom">Found</span>ing Team
       </h2>
-      {/* <div className="py-10 lg:py-20">
-        <div className="bg-[#2A44A9] h-[1px] m-auto" />
-      </div> */}
+      
       {/* -------------------------CEO-------- Vaishali Dhankani--------------------------------------------- */}
       <div className="lg:flex items-center gap-[8%] " >
         <div className=" m-auto  flex justify-center lg:justify-start mt-auto mb-[8px] ml-[0px] 2xl:w-[25%]">

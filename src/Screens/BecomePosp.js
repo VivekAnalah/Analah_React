@@ -33,7 +33,7 @@ function BecomePosp() {
         <div className="container-fluid pb-4" >
           <div className="flex flex-col sm:flex-row gap-[5%]  mt-[50px] relative items-center ">
             <div className="flex flex-col sm:w-[50.6%] w-[80%]  ml-[4%]  order-2 sm:order-1 sm:[50%] sm:ml-[8.5%] sm:mt-[0px] mt-[45px]" >
-              <div className="my-container_posp sm:space-y-[10%]  xl:pl-0  " >
+              <div className="sm:space-y-[10%]  xl:pl-0  " >
                 <h2 className="font-semibold  sm:text-[22px] text-[24px] 2xl:text-[32px] lg:text-[28px] md:text-[26px] text-[#2A44A9] " >
                  Become an Insurance PoSP
                   

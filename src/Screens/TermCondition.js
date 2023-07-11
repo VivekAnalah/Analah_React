@@ -1,13 +1,13 @@
-import { Grid, useMediaQuery } from "@mui/material";
-import React, { useContext, useEffect, useState } from "react";
+import {  useMediaQuery } from "@mui/material";
+
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { Link, useLocation } from "react-router-dom";
-import { Cheacked_Context } from "../Context/Cheacked_Context";
+import { Link } from "react-router-dom";
+
 
 
 function TermCondition() {
-  const {cheacked_disclaimer,cheacked_T_C,cheacked_privacy,Set_T_C } = useContext(Cheacked_Context);
+  ;
   const matches = useMediaQuery("(max-width:500px)");
   
 
@@ -20,17 +20,17 @@ function TermCondition() {
         <div className="tab_container" id="privacy">
           <input id="tab1" type="radio" name="tabs" defaultChecked={false} />
           <label for="tab1" className="tab1 ">
-          <Link to={"/privacy-policy"} >Privacy Policy</Link>
+          Privacy Policy
           </label>
 
           <input id="tab2" type="radio" name="tabs" defaultChecked={false}/>
           <label for="tab2" className="tab2">
-          <Link to={"/disclaimer"} > Disclaimer </Link>
+           Disclaimer
           </label>
 
           <input id="tab3" type="radio" name="tabs" defaultChecked={true}/>
           <label for="tab3" className="tab3">
-          <Link to={"/term-condition"} >Terms & Conditions </Link>
+        Terms & Conditions 
           </label>
 
           <section id="content1" className="tab-content">

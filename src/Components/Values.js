@@ -1,8 +1,8 @@
-// import { useMediaQuery } from "@mui/material";
+
 import React, { useState } from "react";
 
 function About() {
-  // const matches = useMediaQuery("(max-width:500px)");
+  
 
   // -------- Title holder -----------
   const [title, setTitle] = useState("Entrepreneurship");
@@ -113,7 +113,7 @@ function About() {
             {title}
           </span>
         </h3>
-        <h5 className="font-normal text-base lg:text-0.5xl text-[14px] text-center lg:w-7/12 pt-6  text-[#525252] ">
+        <h5 className="font-normal text-base lg:text-0.5xl xl:text-[16px] text-[14px] text-center lg:w-7/12 pt-6  text-[#595959] ">
           {value}
         </h5>
       </div>

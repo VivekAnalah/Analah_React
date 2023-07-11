@@ -1,4 +1,4 @@
-// import { Grid, useMediaQuery } from "@mui/material";
+
 import React, { useState } from "react";
 import "../App.css";
 import axios from "axios";
@@ -179,42 +179,7 @@ console.log(e)
                       </div>
                     </div>
 
-                  {/* <div className="m-0">
-                    <input
-                      type="radio"
-                      className="radio-button"
-                      value="Life"
-                      name="type"
-                    />{" "}
-                    Life
-                  </div>
-                  <div className="m-0">
-                    <input
-                      type="radio"
-                      className="radio-button"
-                      value="Health"
-                      name="type"
-                    />{" "}
-                    Health
-                  </div>
-                  <div className="m-0">
-                    <input
-                      type="radio"
-                      className="radio-button"
-                      value="Car"
-                      name="type"
-                    />{" "}
-                    Car
-                  </div>
-                  <div className="m-0">
-                    <input
-                      type="radio"
-                      className="radio-button"
-                      value="Bike"
-                      name="type"
-                    />{" "}
-                    Bike
-                  </div> */}
+                  
                 </div>
                 <div className="lg:w-[85%]">
                   <input
