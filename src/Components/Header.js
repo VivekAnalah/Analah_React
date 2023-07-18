@@ -8,7 +8,7 @@ function Header({ policyDetails }) {
   console.log("location",location.pathname)
   const divStyles = {
     boxShadow: "0px 2px 4px 0 rgb(0 0 0 / 20%)",
-    // marginBottom:'50px',
+  
     marginRight: "0",
   };
   const [navbarOpen, setNavbarOpen] = React.useState(false);

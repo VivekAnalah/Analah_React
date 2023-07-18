@@ -140,7 +140,7 @@ function Travel() {
         why={false}
         whyText ={[]} 
         isRequired = {false}
-          whyRequired_head = {""}
+          whyRequired_head = {"Why is Car Insurance required?"}
           whyRequired_Text = {[]}  
           what={true}
           whatText = {whatText}

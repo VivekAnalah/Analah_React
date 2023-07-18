@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../App.css";
-import { Link } from "react-router-dom";
-import Whatsapp from "./Whatsapp";
 
 function PolicyDetails({
   head,
@@ -81,7 +79,7 @@ function PolicyDetails({
 
       <div
         id="insurance-scroll"
-        className=" mycontainer1 mx-auto lg:pb-[200px] md:pb-[150px] sm:pb-[120px] pb-[120px]   "
+        className=" mx-auto lg:pb-[200px] md:pb-[150px] sm:pb-[120px] pb-[120px]   "
         style={{
           background:
             "linear-gradient(-5.38deg, rgb(42, 68, 168) -107.1%, rgba(255, 255, 255, 0.06) 45.41%)",
@@ -167,11 +165,19 @@ function PolicyDetails({
           className="items-center  w-[100%] absolute lg:top-[-180px] md:top-[-150px] sm:top-[-120px] top-[-120px] lg:pl-[25%] lg:pr-[25%] md:pl-[20%] md:pr-[20%] sm:pl-[20%] sm:pr-[20%] pl-[5%] pr-[5%] "
           style={{ textAlign: "center" }}
         >
-          <h2 className="quotes  text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
-            <span className="text-[#2A44A9] font-light">{Ins_Text_1}</span>{" "}
-            <span className="text-[#2A44A9] font-normal">{Ins_Text_2}</span>{" "}
-            <span className="text-[#2A44A9] font-light">{Ins_Text_3}</span>
-          </h2>
+           {myArr[0] === "Term"  ? (
+            <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
+              <span className="text-[#2A44A9] font-normal">{Ins_Text_1}</span>{" "}
+              <span className="text-[#2A44A9] font-light">{Ins_Text_2}</span>{" "}
+              <span className="text-[#2A44A9] font-light">{Ins_Text_3}</span>
+            </h2>
+          ) : (
+            <h2 className="text-[#000000] text-center text-[16px]  md:text-[20px] sm:text-[18px] lg:text-[25px] xl:text-[28px] items-center">
+              <span className="text-[#2A44A9] font-light">{Ins_Text_1}</span>{" "}
+              <span className="text-[#2A44A9] font-normal">{Ins_Text_2}</span>{" "}
+              <span className="text-[#2A44A9] font-light">{Ins_Text_3}</span>
+            </h2>
+          )}
         </div>
 
         <div
@@ -565,7 +571,7 @@ function PolicyDetails({
                   documents may change.
                 </p>
                 <ul className="list-disc ml-4 mb-10">
-                  {document_data.map((item, index) => {
+                  {document_data && document_data.map((item, index) => {
                     return (
                       <li
                         className="text_font text-justify  ml-[5%]"
@@ -592,9 +598,7 @@ function PolicyDetails({
       <div className="mt-[20px]">
         <Footer />
       </div>
-      {/* <div className="fixed bottom-[10%] left-[2%]">
-      <Whatsapp />
-      </div> */}
+     
       
     </div>
   );

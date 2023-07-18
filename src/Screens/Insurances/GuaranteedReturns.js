@@ -198,33 +198,33 @@ function GuaranteedReturns() {
                               />
                               <label htmlFor="checkBox"></label>
                             </div>
-                            <Link to="/privacy-policy">
+                            
                               <p className="text-xs	px-5">
                                 {" "}
                                 I hereby agree to the{" "}
                                 <Link
                                   to={"/privacy-policy"}
-                                  className="text-[#2a44a9]"
+                                  className="text-[#2a44a9] hover:font-extrabold"
                                 >
-                                  Privacy Policy
+                                  Privacy Policy,
                                 </Link>
-                                ,{" "}
+                                {" "}
                                 <Link
                                   to={"/disclaimer"}
-                                  className="text-[#2a44a9]"
+                                  className="text-[#2a44a9] hover:font-extrabold"
                                 >
                                   Disclaimer
                                 </Link>{" "}
-                                and
+                                and {" "}
                                 <Link
                                   to={"/term-condition"}
-                                  className="text-[#2a44a9]"
+                                  className="text-[#2a44a9] hover:font-extrabold"
                                 >
                                   Terms & Conditions{" "}
                                 </Link>
                                 .
                               </p>
-                            </Link>
+                          
                           </div>
                           <div className="text-center">
                             <button

@@ -17,14 +17,7 @@ module.exports = {
         minxl: { min: "1200px" },
         min2xl: { min: "1536px" },
       },
-      // screens: {
-      //   lg: '1235px',
-      //   sm: '600px',
-      //   md: '728px',
-      //   lg: '984px',
-      //   xl: '1240px',
-      //   '2xl': '1496px',
-      // },
+    
     },
     extend: {},
   },

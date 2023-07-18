@@ -63,7 +63,7 @@ function About() {
         </h5>
 
 {/* ------- Value Image & Button Container -------------- */}
-        <div className="flex justify-center items-center insurance_value_button_container w-[120%] sm:w-[100%]"  >
+        <div className="flex justify-center items-center relative w-[120%] sm:w-[100%]"  >
           <img
             alt="values"
             src={require("../Assets/Images/values.png")}
@@ -113,7 +113,7 @@ function About() {
             {title}
           </span>
         </h3>
-        <h5 className="font-normal text-base lg:text-0.5xl xl:text-[16px] text-[14px] text-center lg:w-7/12 pt-6  text-[#595959] ">
+        <h5 className="text_font text-center lg:w-7/12 pt-6">
           {value}
         </h5>
       </div>

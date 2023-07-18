@@ -73,15 +73,7 @@ const insurance_data = [
 
 function Home() {
   const matches = useMediaQuery("(max-width:500px)");
-  // const { sectionId } = useParams();
-  // const sectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   console.log(sectionId)
-  //   if (sectionRef.current) {
-  //     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // }, [sectionId]);
+  
 
   return (
     <div className="relative" id="top-scroll">
@@ -132,7 +124,7 @@ function Home() {
    
             </div>
             
-      {/* <div className={matches ? "my-5 h-[10px]" : "my-8 h-[10px]"} /> */}
+      
 
       <div className="relative " >
       

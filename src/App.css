@@ -209,12 +209,10 @@ label .fa {
   top: 2%;
 }
 .hero-background {
-  /* background: linear-gradient(180deg, #e1eced 0%, #ffffff 59.9%); */
-  /* border: 2px solid blue; */
   background-image: url("/src/Assets/Images/bg1.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  /* border-radius: 409.5px 0px 0px 0px; */
+
   border-radius: 0px 0px 0px 0px;
   max-width: 200%;
   width: 100%;
@@ -223,23 +221,14 @@ label .fa {
   right: 0;
   top: 0;
 }
-/* .hero-background img {
-  position: relative;
-  right: 0;
-  top: 10%;
-max-width: 200%;
-  width: 104%;
- 
-} */
+
 .cstm-grid {
   display: grid;
   font-size: 85%;
-  /* grid-template-columns: repeat(4, 1fr); */
+
 }
 .homeLeft {
-  /* border: 1px solid red; */
-  width: 54%;
-  /* width: calc(100% - 630px); */
+ width: 54%;
 }
 .relative {
   position: relative;
@@ -1044,12 +1033,7 @@ mark {
 /*Media Query*/
 
 @media only screen and (min-width: 1671px) and (max-width: 3000px) {
-  /* .cstm-grid {
-    display: grid;
-    font-size: 85%;
-    grid-template-columns: repeat(5, 1fr) !important;
-  } */
-  .cstm-grid {
+ .cstm-grid {
     display: grid;
     font-size: 100%;
     column-gap: 4%;
@@ -1093,9 +1077,7 @@ mark {
   }
 }
 @media only screen and (max-width: 1670px) and (min-width: 1536px) {
-  /* .homeLeft {
-        width: 730px;
-    } */
+  
   .cstm-grid {
     grid-template-columns: repeat(4, 1fr) !important;
     font-size: 85%;
@@ -1108,9 +1090,7 @@ mark {
   }
 }
 @media only screen and (max-width: 1535px) and (min-width: 1425px) {
-  /* .homeLeft {
-        width: calc(100% - 530px);
-    } */
+  
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1118,18 +1098,13 @@ mark {
   }
 }
 @media only screen and (max-width: 1535px) and (min-width: 1365px) {
-  /* .homeLeft {
-        width: calc(100% - 590px);
-    } */
+
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 85%;
   }
-  /* .hero-background {
-        height: 600px;
-        width: 600px;
-    } */
+ 
   .main-hero {
     height: 650px;
   }
@@ -1150,14 +1125,7 @@ mark {
   .my-container2 {
     padding: 0 200px !important;
   }
-  /* .homeLeft {
-        width: 600px;
-    } */
-  /* .hero-background{
-        height: 650px;
-        width: 650px;
-    } */
-
+ 
   .main-hero {
     padding: 0 115px !important;
   }
@@ -1166,18 +1134,13 @@ mark {
   }
 }
 @media only screen and (max-width: 1365px) and (min-width: 1280px) {
-  /* .homeLeft {
-        width: calc(100% - 590px);
-    } */
+  
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 85%;
   }
-  /* .hero-background {
-        height: 600px;
-        width: 600px;
-    } */
+ 
   .main-hero {
     height: 650px;
   }
@@ -1186,18 +1149,13 @@ mark {
   }
 }
 @media only screen and (max-width: 1280px) and (min-width: 1160px) {
-  /* .homeLeft {
-        width: calc(100% - 470px);
-    } */
+ 
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 85%;
   }
-  /* .hero-background {
-        height: 500px;
-        width: 500px;
-    } */
+
   .main-hero {
     height: 583px;
   }
@@ -1206,9 +1164,7 @@ mark {
   }
 }
 @media only screen and (max-width: 1160px) and (min-width: 1024px) {
-  /* .homeLeft {
-        width: calc(100% - 500px);
-    } */
+ 
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1217,10 +1173,7 @@ mark {
   .choose-us {
     margin-top: 200px;
   }
-  /* .hero-background {
-        height: 500px;
-        width: 500px;
-    } */
+
   .main-hero {
     height: 583px;
   }
@@ -1229,9 +1182,6 @@ mark {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 951px) {
-  .homeLeft {
-    width: calc(100% - 500px);
-  }
   .cstm-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1240,10 +1190,7 @@ mark {
   .choose-us {
     margin-top: 200px;
   }
-  /* .hero-background {
-        height: 500px;
-        width: 500px;
-    } */
+
   .main-hero {
     height: 583px;
   }
@@ -1253,11 +1200,7 @@ mark {
   .homeLeft h1 {
     line-height: 45px;
   }
-  /* .cstm-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 17%);
-    font-size: 85%;
-  } */
+ 
 
   .hero {
     margin-top: 127px;
@@ -1301,10 +1244,7 @@ mark {
     grid-template-columns: repeat(5, 17%);
     font-size: 85%;
   }
-  /* .hero-background {
-        height: 450px;
-        width: 450px;
-    } */
+ 
   .hero {
     right: 20%;
     width: 60%;
@@ -1355,10 +1295,7 @@ mark {
   .homeLeft h1 {
     line-height: 45px;
   }
-  /* .hero-background {
-        height: 450px;
-        width: 450px;
-    } */
+ 
   .hero {
     right: 10%;
     width: 80%;
@@ -1437,14 +1374,7 @@ mark {
   .homeLeft h1 {
     line-height: 45px;
   }
-  /* .hero-background {
-        height: 450px;
-        width: 450px;
-    } */
-  /* .hero-background img {
-        height: 450px;
-        width: 450px;
-    } */
+ 
   .hero {
     right: 10%;
     width: 80%;
@@ -1483,14 +1413,7 @@ mark {
   .homeLeft h1 {
     line-height: 45px;
   }
-  /* .hero-background {
-        height: 450px;
-        width: 450px;
-    } */
-  /* .hero-background img {
-        height: 450px;
-        width: 450px;
-    } */
+ 
   .hero {
     right: 10%;
     width: 80%;
@@ -1508,25 +1431,14 @@ mark {
 }
 @media only screen and (max-width: 600px) and (min-width: 50px) {
   .homeLeft {
-    /* margin-top: 100%; */
+   
     width: 100%;
   }
   .homeLeft h1 {
     line-height: 45px;
   }
-  /* .hero-background {
-        height: 300px;
-        width: 300px;
-    } */
+ 
 
-  /* .hero {
-        width: 100%;
-        margin-left: -32px;
-        left: 15px;
-        right: 15px;
-        transform: none;
-        top: 120px;
-    } */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1557,84 +1469,6 @@ mark {
   position: relative;
 }
 
-/* Values Button Classses */
-
-/* Entrepreneurship Button class */
-
-/* .ent1 {
-  background-color: teal;
-  background-color: transparent;
-  position: absolute;
-  z-index: 10;
-  width: 9%;
-  height: 23%;
-  border-radius: 50%;
-  top: 66%;
-} */
-
-/* Philanthropy  Button Class */
-/* .phil1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 29%;
-  position: absolute;
-  top: 61%;
-  z-index: 10;
-  width: 9%;
-  height: 15%;
-  border-radius: 5px;
-} */
-/* Innovation  Button Class */
-/* .innovation1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 34%;
-  position: absolute;
-  top: 40%;
-  width: 7%;
-  height: 13%;
-  border-radius: 5px;
-} */
-/* .diversity1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 42%;
-  position: absolute;
-  top: 28%;
-  width: 7%;
-  height: 15%;
-  border-radius: 5px;
-} */
-/* .Transparency1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 50.5%;
-  position: absolute;
-  top: 28%;
-  width: 7%;
-  height: 15%;
-  border-radius: 5px;
-} */
-/* .passion1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 59%;
-  position: absolute;
-  top: 39%;
-  width: 7%;
-  height: 15%;
-  border-radius: 5px;
-} */
-/* .positivity1 {
-  background-color: teal;
-  background-color: transparent;
-  left: 63%;
-  position: absolute;
-  top: 60%;
-  width: 8%;
-  height: 15%;
-  border-radius: 5px;
-} */
 
 @media only screen and (max-width: 900px) and (min-width: 50px) {
   label {

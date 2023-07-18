@@ -75,6 +75,9 @@ function Footer() {
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
+                  <Link to="/Travel"> Travel Insurance </Link>
+                  </h5>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Home">Home Insurance</Link>
                   </h5>
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
@@ -86,9 +89,7 @@ function Footer() {
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
-                  <Link to="/Travel"> Travel Insurance </Link>
-                  </h5>
+                  
                   <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
                     <a href="https://twitter.com/analahinsurance" target="_blank">
                     <img
@@ -261,6 +262,9 @@ function Footer() {
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
+                   <Link to="/Travel"> Travel Insurance </Link>
+                  </h5>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
                   <Link to="/Home">Home Insurance</Link>
                      
                   </h5>
@@ -274,9 +278,7 @@ function Footer() {
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
                     <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" onClick={()=>pageScroll("scroll")}>
-                   <Link to="/Travel"> Travel Insurance </Link>
-                  </h5>
+                  
 
                 </div>
                 <div className="space-y-5">
