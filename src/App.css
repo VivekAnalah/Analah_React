@@ -1541,7 +1541,7 @@ mark {
 /* Defining Font Sizes for text  */
 /* text-[14px] sm:text-[16px] 2xl:text-[18px]  */
 .text_font {
-  color: #525252;
+  color: #595959;
 }
 @media only screen and (min-width: 1536px) {
   .text_font {

@@ -74,7 +74,7 @@ function FoundingTeam() {
             from the Indian Institute of Management (IIM) - Calcutta. His
             leadership competence also dives across the Equity sector among
             leading Asset Management Companies, NBFC’s, and Banks. He possesses
-            a provenentrepreneurial prowess having been a key member of core
+            a proven entrepreneurial prowess having been a key member of core
             startup teams responsible for the successful launch of top notch
             organizations like HDFC Bank, SBI Asset Management, Mirae Asset and
             Prudential Incorporation (Pramerica AMC).

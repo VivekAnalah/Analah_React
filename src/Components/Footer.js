@@ -180,8 +180,7 @@ function Footer() {
                       Registered & Corporate Office:{" "}
                     </span>
                     <br />
-                    1407, B-Wing Parinee Crescenzo, G Block BKC, Mumbai,
-                    Maharashtra 400051
+                    14th Floor B wing, 1407, Parinee Crescenzo, BKC, Mumbai, Mumbai City, Maharashtra, 400051
                   </h5>
                   <br />
 
@@ -220,7 +219,7 @@ function Footer() {
 
                 <div className="space-y-2  w-[50%]">
                   <h5 className="font-[400] text-[12px] sm:text-[16px] text-white">
-                    Analah Insurance Broking Pvt Ltd
+                  ANALAH INSURANCE BROKING PRIVATE LIMITED
                   </h5>
                   <h5 className="font-[400] text-[12px] sm:text-[16px] text-white">
                     IRDAI License No. 744 <br />
@@ -328,8 +327,8 @@ function Footer() {
                       Registered & Corporate Office:{" "}
                     </span>
                     <br />
-                    1407, B-Wing Parinee Crescenzo, G Block BKC, Mumbai,
-                    Maharashtra 400051
+          
+                    14th Floor B wing, 1407, Parinee Crescenzo, BKC, Mumbai, Mumbai City, Maharashtra, 400051
                   </h5>
                   <br />
 
@@ -367,7 +366,7 @@ function Footer() {
 
                 <div className="space-y-5 mt-16 w-[100%]">
                   <h5 className="font-[400] text-[16px] text-white">
-                    Analah Insurance Broking Pvt Ltd
+                  ANALAH INSURANCE BROKING PRIVATE LIMITED
                   </h5>
                   <h5 className="font-[400] text-[16px] text-white">
                     IRDAI License No. 744 <br />
